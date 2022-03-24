@@ -27,7 +27,7 @@
              VerticalTextAlignment="Center"
              Grid.ColumnSpan="3"
              FontSize="20"
-             BackgroundColor="Indigo"/>
+             BackgroundColor="Blue"/>
             <Label 
              Grid.Row="1" 
              Grid.Column="0" 
