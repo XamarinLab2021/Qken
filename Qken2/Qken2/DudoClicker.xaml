@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Qken2.DudoClicker">
+             x:Class="Qken2.DudoClicker"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid BackgroundColor="white">
             <Grid.RowDefinitions>
-               <RowDefinition Height="50"/>
-               <RowDefinition Height="100"/>
-               <RowDefinition Height="50"/>
+               <RowDefinition Height="80"/>
+               <RowDefinition Height="120"/>
+               <RowDefinition Height="60"/>
                <RowDefinition Height="250"/>
                <RowDefinition Height="*"/>
                <RowDefinition Height="80"/>
-               <RowDefinition Height="80"/>
-            </Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+               </Grid.RowDefinitions>
            <Grid.ColumnDefinitions>
                <ColumnDefinition Width="*"/>
                <ColumnDefinition Width="*"/>
@@ -20,26 +21,61 @@
                <ColumnDefinition Width="*"/>
                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Button
+                Grid.Row="0" 
+                Grid.Column="0"
+                Text="Back"
+                Clicked="Button_Clicked"/>
+            <Label
+                Grid.Row="0" 
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="Dud Coins:"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="Large"
+                TextColor="Black"/>
+            <Button
+                Grid.Row="0" 
+                Grid.Column="4"
+                ImageSource="Dud_CoinS"/>
             <Label 
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
-                BackgroundColor="Aqua"
+                BackgroundColor="LightGray"
                 Grid.Row="1" 
                 Grid.Column="1"
-                Grid.ColumnSpan="3"/>
+                Grid.ColumnSpan="3"
+                FontSize="Header"
+                Text="0"
+                x:Name="Dudpoints"/>
             <Button
                 Grid.Row="3" 
                 Grid.Column="1"
                 Text="Dudo"
-                Grid.ColumnSpan="3"/>
+                Grid.ColumnSpan="3"
+                ImageSource="dudo"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_1"/>
+            <Label
+                Grid.Row="4" 
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="Upgrades:"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"
+                TextColor="Black"
+                FontSize="Large"/>
             <Button 
                 Grid.Column="0" 
                 Grid.Row="5"
-                Text="1"/>
+                Text="2x    100D"
+                Clicked="Button_Clicked_2"/>
             <Button 
                 Grid.Column="1" 
                 Grid.Row="5"
-                Text="2"/>
+                Text="3x    500D"
+                Clicked="Button_Clicked_3"/>
             <Button 
                 Grid.Column="2" 
                 Grid.Row="5"
@@ -52,10 +88,6 @@
                 Grid.Column="4" 
                 Grid.Row="5"
                 Text="5"/>
-            <Button 
-                Grid.Column="0" 
-                Grid.Row="6"
-                Text="6"/>
             
         </Grid> 
     </ContentPage.Content>
