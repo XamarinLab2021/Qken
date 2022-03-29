@@ -19,5 +19,10 @@ namespace Qken2
         {
             Application.Current.MainPage = new NavigationPage(new DudoClicker());
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new RockPaperScissors());
+        }
     }
 }

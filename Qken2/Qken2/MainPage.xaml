@@ -47,7 +47,8 @@
             <Button
                 Grid.Row="2" 
                 Grid.Column="1"
-                Text="Hra2"/>
+                Text="Rock Paper Bryndzek"
+                Clicked="Button_Clicked"/>
             <Button
                 Grid.Row="2" 
                 Grid.Column="2"

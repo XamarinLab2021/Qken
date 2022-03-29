@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.RockPaperScissors"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="80"/>
+
+
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Back"
+                Clicked="Button_Clickedback"/>
+            <Label
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.ColumnSpan="3"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Text="Win/Lose"
+                FontSize="Title"/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="6"
+                ImageSource="eve"/>
+
+            <Button
+                ImageSource="problem"
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="5"
+                Grid.RowSpan="3"/>
+            <Button
+                BackgroundColor="Aqua"
+                Grid.Row="6"
+                Grid.Column="0"
+                Text="Rock"
+                Grid.ColumnSpan="2"/>
+            <Button
+                BackgroundColor="Aqua"
+                Grid.Row="6"
+                Grid.Column="3"
+                Text="Paper"/>
+            <Button
+                BackgroundColor="Aqua"
+                Grid.Row="6"
+                Grid.Column="5"
+                Text="Scissors"
+                Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
