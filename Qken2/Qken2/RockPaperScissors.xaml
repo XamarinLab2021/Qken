@@ -4,7 +4,8 @@
              x:Class="Qken2.RockPaperScissors"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <Grid>
+        <Frame Padding="10" BackgroundColor="White">
+        <Grid Grid.ColumnSpacing ="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="*"/>
@@ -21,7 +22,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="20"/>
                 <ColumnDefinition Width="80"/>
 
 
@@ -49,24 +50,29 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 Grid.ColumnSpan="5"
-                Grid.RowSpan="3"/>
+                Grid.RowSpan="3"
+                Clicked="Button_Clickedback"/>
             <Button
                 BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="0"
                 Text="Rock"
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2"
+                Clicked="Button_Clickedback"/>
             <Button
                 BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="3"
-                Text="Paper"/>
+                Text="Paper"
+                Clicked="Button_Clickedback"/>
             <Button
                 BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="5"
                 Text="Scissors"
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2"
+                Clicked="Button_Clickedback"/>
         </Grid>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>
