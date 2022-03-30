@@ -7,6 +7,8 @@
 </ul>
 <h2>Veľmi potrebné</h2>
 <ul>
+  <li>Splash screen</li>
+  <li>Lepsi vizual</li>
   <li>Vytvoriť viacero hier</li>
   <li>Ktoré hry záleží na náročnosti jednotlivých hier</li>
   <li>Napr:</li>
