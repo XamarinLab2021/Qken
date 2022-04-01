@@ -21,5 +21,25 @@ namespace Qken2
         {
             Application.Current.MainPage = new NavigationPage(new MainPage());
         }
+
+        private void Button_Clicked_virzdek(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_rock(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_paper(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_scissors(object sender, EventArgs e)
+        {
+
+        }
     }
 }

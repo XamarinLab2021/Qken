@@ -4,6 +4,7 @@
              x:Class="Qken2.DudoClicker"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
+      <Frame Padding="10">
         <Grid BackgroundColor="white">
             <Grid.RowDefinitions>
                <RowDefinition Height="80"/>
@@ -89,6 +90,7 @@
                 Grid.Row="5"
                 Text="5"/>
             
-        </Grid> 
+        </Grid>
+      </Frame>
     </ContentPage.Content>
 </ContentPage>

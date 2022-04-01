@@ -51,27 +51,24 @@
                 Grid.Column="1"
                 Grid.ColumnSpan="5"
                 Grid.RowSpan="3"
-                Clicked="Button_Clickedback"/>
+                Clicked="Button_Clicked_virzdek"/>
             <Button
-                BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="0"
-                Text="Rock"
                 Grid.ColumnSpan="2"
-                Clicked="Button_Clickedback"/>
+                Clicked="Button_Clicked_rock"
+                ImageSource="TheRock"/>
             <Button
-                BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="3"
-                Text="Paper"
-                Clicked="Button_Clickedback"/>
+                Clicked="Button_Clicked_paper"
+                ImageSource="paper"/>
             <Button
-                BackgroundColor="Aqua"
                 Grid.Row="6"
                 Grid.Column="5"
-                Text="Scissors"
                 Grid.ColumnSpan="2"
-                Clicked="Button_Clickedback"/>
+                Clicked="Button_Clicked_scissors"
+                ImageSource="scissors"/>
         </Grid>
         </Frame>
     </ContentPage.Content>
