@@ -39,7 +39,8 @@
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 Text="Win/Lose"
-                FontSize="Title"/>
+                FontSize="Title"
+                TextColor="Black"/>
             <Button
                 Grid.Row="0"
                 Grid.Column="6"
@@ -47,11 +48,26 @@
 
             <Button
                 ImageSource="problem"
-                Grid.Row="2"
+                Grid.Row="1"
                 Grid.Column="1"
                 Grid.ColumnSpan="5"
                 Grid.RowSpan="3"
+                BackgroundColor="White"
                 Clicked="Button_Clicked_virzdek"/>
+            <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="5"
+                Text="Problem? si vybral:"
+                FontSize="Title"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+            <Image
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    Source="TheRock"
+                    x:Name="Opponent"/>
             <Button
                 Grid.Row="6"
                 Grid.Column="0"
