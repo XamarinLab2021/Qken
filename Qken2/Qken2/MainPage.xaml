@@ -69,9 +69,10 @@
                 Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
-                Text="Tu bude daco co ma napadne"
+                Text="Uprava designu coming soon!"
                 TextColor="Black"
-                BackgroundColor="DimGray"/>
+                BackgroundColor="DimGray"
+                FontSize="Title"/>
             <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="3">
                  <Label
                      Text="Tu bude daco co ma napadne"

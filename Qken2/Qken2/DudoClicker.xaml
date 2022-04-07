@@ -16,11 +16,11 @@
                 <RowDefinition Height="40"/>
                </Grid.RowDefinitions>
            <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="80"/>
                <ColumnDefinition Width="*"/>
                <ColumnDefinition Width="*"/>
                <ColumnDefinition Width="*"/>
-               <ColumnDefinition Width="*"/>
-               <ColumnDefinition Width="*"/>
+               <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
             <Button
                 Grid.Row="0" 

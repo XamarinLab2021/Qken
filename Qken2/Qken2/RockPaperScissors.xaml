@@ -38,36 +38,52 @@
                 Grid.ColumnSpan="3"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
-                Text="Win/Lose"
+                x:Name="Winlose"
                 FontSize="Title"
-                TextColor="Black"/>
+                TextColor="Indigo"/>
             <Button
                 Grid.Row="0"
                 Grid.Column="6"
                 ImageSource="eve"/>
-
-            <Button
-                ImageSource="problem"
+            <Image
+                Source="problem"
                 Grid.Row="1"
-                Grid.Column="1"
-                Grid.ColumnSpan="5"
-                Grid.RowSpan="3"
-                BackgroundColor="White"
-                Clicked="Button_Clicked_virzdek"/>
+                Grid.Column="0"
+                Grid.ColumnSpan="7"
+                Grid.RowSpan="3"/>
             <Label
                 Grid.Row="4"
                 Grid.Column="1"
+                Grid.ColumnSpan="4"
+                Text="Number of Wins:"
+                FontSize="Medium"
+                TextColor="Black"
+                VerticalOptions="Center"/>
+            <Label
+                Grid.Row="4"
+                Grid.Column="4"
+                x:Name="Wins"
+                Text="0"
+                FontSize="Title"
+                TextColor="Black"
+                VerticalOptions="Center"/>
+            <Label
+                Grid.Row="5"
+                Grid.Column="1"
                 Grid.ColumnSpan="5"
-                Text="Problem? si vybral:"
+                Text="Problem? chose:"
                 FontSize="Title"
                 TextColor="Black"
                 HorizontalOptions="Center"
-                VerticalOptions="Center"/>
-            <Image
-                    Grid.Row="5"
-                    Grid.Column="3"
-                    Source="TheRock"
-                    x:Name="Opponent"/>
+                VerticalOptions="Start"/>
+            <Label
+                Grid.Row="5"
+                Grid.Column="3"
+                x:Name="Opponent"
+                TextColor="Indigo"
+                FontSize="Title"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
             <Button
                 Grid.Row="6"
                 Grid.Column="0"
