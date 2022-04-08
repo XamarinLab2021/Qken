@@ -40,18 +40,52 @@
                 VerticalTextAlignment="Center"
                 x:Name="Winlose"
                 FontSize="Title"
-                TextColor="Indigo"/>
+                TextColor="Indigo"
+                Text="Win/Lose"/>
             <Button
                 Grid.Row="0"
                 Grid.Column="6"
                 ImageSource="eve"/>
-            <Image
-                Source="problem"
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                Text="You:"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="Large"/>
+            <Label
+                Grid.Row="1"
+                Grid.Column="5"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                Text="Problem:"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="Large"/>
+
+                <Image
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="7"
-                Grid.RowSpan="3"/>
-            <Label
+                Grid.RowSpan="3"
+                x:Name ="Test"/>
+            <Image
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Black"/>
+            <Image
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="Black"/>
+            <Image
+                Grid.Row="2"
+                Grid.Column="5"
+                Grid.ColumnSpan="2"
+                BackgroundColor="Black"/>
+                <Label
                 Grid.Row="4"
                 Grid.Column="1"
                 Grid.ColumnSpan="4"

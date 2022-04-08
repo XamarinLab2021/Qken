@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -13,6 +14,8 @@ namespace Qken2
     public partial class RockPaperScissors : ContentPage
     {
         int wins = 0;
+        Random random = new Random();
+
         public RockPaperScissors()
         {
             InitializeComponent();
@@ -24,103 +27,78 @@ namespace Qken2
         }
         private void Button_Clicked_rock(object sender, EventArgs e)
         {
-            Random random = new Random();
+            Test.Source = "";
+
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
                 Opponent.Text = "Rock";
-            }
-            else if (opponentmove == 2)
-            {
-                Opponent.Text = "Paper";
-            }
-            else
-            {
-                Opponent.Text = "Scissors";
-            }
-
-            if (opponentmove == 1)
-            {
                 Winlose.Text = "You Draw";
             }
             else if (opponentmove == 2)
             {
+                Opponent.Text = "Paper";
                 Winlose.Text = "You Lose";
+                Test.Source = "problem.png";
             }
             else
             {
-                 Winlose.Text = "You Win";
+                Opponent.Text = "Scissors";
+                Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
             }
-            
         }
 
         private void Button_Clicked_paper(object sender, EventArgs e)
         {
-            Random random = new Random();
+            Test.Source = "";
+
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
                 Opponent.Text = "Rock";
-            }
-            else if (opponentmove == 2)
-            {
-                Opponent.Text = "Paper";
-            }
-            else
-            {
-                Opponent.Text = "Scissors";
-            }
-
-            if (opponentmove == 1)
-            {
                 Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
             }
             else if (opponentmove == 2)
             {
+                Opponent.Text = "Paper";
                 Winlose.Text = "You Draw";
             }
             else
             {
+                Opponent.Text = "Scissors";
                 Winlose.Text = "You Lose";
+                Test.Source = "problem.png";
             }
         }
 
         private void Button_Clicked_scissors(object sender, EventArgs e)
         {
-            Random random = new Random();
+            Test.Source = "";
+            
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
                 Opponent.Text = "Rock";
+                Winlose.Text = "You Lose";
+                Test.Source = "problem.png";
             }
             else if (opponentmove == 2)
             {
                 Opponent.Text = "Paper";
-            }
-            else
-            {
-                Opponent.Text = "Scissors";
-            }
-
-            if (opponentmove == 1)
-            {
-                Winlose.Text = "You Lose";
-            }
-            else if (opponentmove == 2)
-            {
                 Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
             }
             else
             {
+                Opponent.Text = "Scissors";
                 Winlose.Text = "You Draw";
             }
         }
