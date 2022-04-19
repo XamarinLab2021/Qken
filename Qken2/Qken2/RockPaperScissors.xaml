@@ -36,6 +36,7 @@
                 Grid.Row="0"
                 Grid.Column="2"
                 Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 x:Name="Winlose"
@@ -64,34 +65,31 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 FontSize="Large"/>
-
-                <Image
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="7"
-                Grid.RowSpan="3"
-                x:Name ="Test"/>
             <Image
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                BackgroundColor="Black"/>
+                x:Name="Yourchoice"/>
             <Image
                 Grid.Row="2"
                 Grid.Column="3"
-                BackgroundColor="Black"/>
+                x:Name="Compare"/>
             <Image
                 Grid.Row="2"
                 Grid.Column="5"
                 Grid.ColumnSpan="2"
-                BackgroundColor="Black"/>
-                <Label
+                x:Name="Problemchoice"/>
+            <Image
+                Grid.Row="3"
+                Grid.Column="3"
+                x:Name="Problem"/>
+            <Label
                 Grid.Row="4"
                 Grid.Column="1"
                 Grid.ColumnSpan="4"
                 Text="Number of Wins:"
                 FontSize="Medium"
-                TextColor="Black"
+                TextColor="Indigo"
                 VerticalOptions="Center"/>
             <Label
                 Grid.Row="4"
@@ -99,25 +97,24 @@
                 x:Name="Wins"
                 Text="0"
                 FontSize="Title"
-                TextColor="Black"
+                TextColor="Indigo"
                 VerticalOptions="Center"/>
             <Label
                 Grid.Row="5"
                 Grid.Column="1"
-                Grid.ColumnSpan="5"
-                Text="Problem? chose:"
-                FontSize="Title"
-                TextColor="Black"
-                HorizontalOptions="Center"
+                Grid.ColumnSpan="4"
+                Text="Wins in Row:"
+                FontSize="Medium"
+                TextColor="Indigo"
                 VerticalOptions="Start"/>
             <Label
                 Grid.Row="5"
-                Grid.Column="3"
-                x:Name="Opponent"
-                TextColor="Indigo"
+                Grid.Column="4"
+                x:Name="RowWins"
+                Text="0"
                 FontSize="Title"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"/>
+                TextColor="Indigo"
+                VerticalOptions="Start"/>
             <Button
                 Grid.Row="6"
                 Grid.Column="0"

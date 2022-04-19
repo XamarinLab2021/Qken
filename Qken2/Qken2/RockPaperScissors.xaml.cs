@@ -14,6 +14,7 @@ namespace Qken2
     public partial class RockPaperScissors : ContentPage
     {
         int wins = 0;
+        int rowWins = 0;
         Random random = new Random();
 
         public RockPaperScissors()
@@ -27,79 +28,109 @@ namespace Qken2
         }
         private void Button_Clicked_rock(object sender, EventArgs e)
         {
-            Test.Source = "";
+            Yourchoice.Source = "TheRock.jpg";
+            Problem.Source = "";
 
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
-                Opponent.Text = "Rock";
                 Winlose.Text = "You Draw";
+                Problemchoice.Source = "TheRock.jpg";
+                Compare.Source = "equals.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
             }
             else if (opponentmove == 2)
             {
-                Opponent.Text = "Paper";
                 Winlose.Text = "You Lose";
-                Test.Source = "problem.png";
+                Problemchoice.Source = "paper.jpg";
+                Compare.Source = "right.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
+                Problem.Source = "problem.png";
             }
             else
             {
-                Opponent.Text = "Scissors";
                 Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
+                Problemchoice.Source = "scissors.jpg";
+                Compare.Source = "left.png";
+                rowWins += 1;
+                RowWins.Text = rowWins.ToString();
             }
         }
 
         private void Button_Clicked_paper(object sender, EventArgs e)
         {
-            Test.Source = "";
+            Yourchoice.Source = "paper.jpg";
+            Problem.Source = "";
 
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
-                Opponent.Text = "Rock";
                 Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
+                Problemchoice.Source = "TheRock.jpg";
+                Compare.Source = "left.png";
+                rowWins += 1;
+                RowWins.Text = rowWins.ToString();
             }
             else if (opponentmove == 2)
             {
-                Opponent.Text = "Paper";
                 Winlose.Text = "You Draw";
+                Problemchoice.Source = "paper.jpg";
+                Compare.Source = "equals.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
             }
             else
             {
-                Opponent.Text = "Scissors";
                 Winlose.Text = "You Lose";
-                Test.Source = "problem.png";
+                Problemchoice.Source = "scissors.jpg";
+                Compare.Source = "right.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
+                Problem.Source = "problem.png";
             }
         }
 
         private void Button_Clicked_scissors(object sender, EventArgs e)
         {
-            Test.Source = "";
-            
+            Yourchoice.Source = "scissors.jpg";
+            Problem.Source = "";
+
             int opponentmove = random.Next(1, 4);
 
             if (opponentmove == 1)
             {
-                Opponent.Text = "Rock";
                 Winlose.Text = "You Lose";
-                Test.Source = "problem.png";
+                Problemchoice.Source = "TheRock.jpg";
+                Compare.Source = "right.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
+                Problem.Source = "problem.png";
             }
             else if (opponentmove == 2)
             {
-                Opponent.Text = "Paper";
                 Winlose.Text = "You Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
+                Problemchoice.Source = "paper.jpg";
+                Compare.Source = "left.png";
+                rowWins += 1;
+                RowWins.Text = rowWins.ToString();
             }
             else
             {
-                Opponent.Text = "Scissors";
                 Winlose.Text = "You Draw";
+                Problemchoice.Source = "scissors.jpg";
+                Compare.Source = "equals.png";
+                rowWins = 0;
+                RowWins.Text = rowWins.ToString();
             }
         }
        
