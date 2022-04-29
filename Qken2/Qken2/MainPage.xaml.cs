@@ -15,14 +15,19 @@ namespace Qken2
             InitializeComponent();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private void Button_Clicked_1(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new DudoClicker());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked_2(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new RockPaperScissors());
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new TicTacToe());
         }
     }
 }

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.TicTacToe"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Frame Padding="10" BackgroundColor="White">
+            <Grid Grid.ColumnSpacing ="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
+                    <Button
+                     Text="Back"
+                     Clicked="Button_ClickedBack"
+                     HorizontalOptions="Start"
+                     WidthRequest="80"/>
+                    <Button
+                     ImageSource="scoin"
+                     HorizontalOptions="EndAndExpand"
+                     WidthRequest="80"/>
+                </StackLayout>
+                
+                <Button
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 Clicked="Button_Clicked"
+                 x:Name="nula"/>
+                <Button
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 Clicked="Button_Clicked_1"
+                 x:Name="jedna"/>
+                <Button
+                 Grid.Row="4"
+                 Grid.Column="1"
+                 Clicked="Button_Clicked_2"
+                 x:Name="dva"/>
+                <Button
+                 Grid.Row="2"
+                 Grid.Column="2"
+                 Clicked="Button_Clicked_3"
+                 x:Name="tri"/>
+                <Button
+                 Grid.Row="3"
+                 Grid.Column="2"
+                 Clicked="Button_Clicked_4"
+                 x:Name="styri"/>
+                <Button
+                 Grid.Row="4"
+                 Grid.Column="2"
+                 Clicked="Button_Clicked_5"
+                 x:Name="pat"/>
+                <Button
+                 Grid.Row="2"
+                 Grid.Column="3"
+                 Clicked="Button_Clicked_6"
+                 x:Name="sest"/>
+                <Button
+                 Grid.Row="3"
+                 Grid.Column="3"
+                 Clicked="Button_Clicked_7"
+                 x:Name="sedem"/>
+                <Button
+                 Grid.Row="4"
+                 Grid.Column="3"
+                 Clicked="Button_Clicked_8"
+                 x:Name="osem"/>
+                
+                <StackLayout Grid.Column="0" Grid.Row="6" Orientation="Horizontal" Grid.ColumnSpan="5">
+                    <Button
+                     Text="Singleplayer"
+                     HorizontalOptions="EndAndExpand"
+                     WidthRequest="130"
+                     Clicked="Button_ClickedSingle"/>
+                    <Button
+                     Text="Multiplayer"
+                     HorizontalOptions="StartAndExpand"
+                     WidthRequest="130"
+                     Clicked="Button_ClickedMulti"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

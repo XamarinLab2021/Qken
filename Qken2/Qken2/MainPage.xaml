@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label
-             Grid.Row="0" 
+             Grid.Row="0"
              Grid.Column="0" 
              Text="Qken" 
              TextColor="White"
@@ -43,16 +43,17 @@
                 Grid.Row="2" 
                 Grid.Column="0"
                 Text="Dudo Clicker"
-                Clicked="Button_OnClicked"/>
+                Clicked="Button_Clicked_1"/>
             <Button
                 Grid.Row="2" 
                 Grid.Column="1"
                 Text="Rock Paper Bryndzek"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked_2"/>
             <Button
                 Grid.Row="2" 
                 Grid.Column="2"
-                Text="Hra3"/>
+                Text="Tic Tac Toe"
+                Clicked="Button_Clicked_3"/>
             <Button
                 Grid.Row="3" 
                 Grid.Column="0"
