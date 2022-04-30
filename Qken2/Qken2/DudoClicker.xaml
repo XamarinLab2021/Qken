@@ -12,34 +12,37 @@
                <RowDefinition Height="60"/>
                <RowDefinition Height="250"/>
                <RowDefinition Height="*"/>
-               <RowDefinition Height="80"/>
-                <RowDefinition Height="40"/>
+               <RowDefinition Height="70"/>
+               <RowDefinition Height="40"/>
                </Grid.RowDefinitions>
            <Grid.ColumnDefinitions>
-               <ColumnDefinition Width="80"/>
                <ColumnDefinition Width="*"/>
+               <ColumnDefinition Width="100"/>
+               <ColumnDefinition Width="100"/>
+               <ColumnDefinition Width="100"/>
                <ColumnDefinition Width="*"/>
-               <ColumnDefinition Width="*"/>
-               <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
-            <Button
-                Grid.Row="0" 
-                Grid.Column="0"
+            
+            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
+              <Button
                 Text="Back"
-                Clicked="Button_Clicked"/>
-            <Label
+                Clicked="Button_ClickedBack"
+                HorizontalOptions="Start"
+                WidthRequest="80"/>
+              <Label
                 Grid.Row="0" 
                 Grid.Column="1"
-                Grid.ColumnSpan="3"
                 Text="Dud Coins:"
-                HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
+                HorizontalOptions ="EndAndExpand"
                 FontSize="Large"
                 TextColor="Black"/>
-            <Button
-                Grid.Row="0" 
-                Grid.Column="4"
-                ImageSource="Dud_CoinS"/>
+              <Button
+                ImageSource="Dud_CoinS"
+                HorizontalOptions="EndAndExpand"
+                WidthRequest="80"/>
+            </StackLayout>
+            
             <Label 
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
@@ -67,29 +70,27 @@
                 VerticalTextAlignment="End"
                 TextColor="Black"
                 FontSize="Large"/>
-            <Button 
-                Grid.Column="0" 
-                Grid.Row="5"
-                Text="2x    100D"
-                Clicked="Button_Clicked_2"/>
-            <Button 
-                Grid.Column="1" 
-                Grid.Row="5"
-                Text="3x    500D"
-                Clicked="Button_Clicked_3"/>
-            <Button 
-                Grid.Column="2" 
-                Grid.Row="5"
-                Text="3"/>
-            <Button 
-                Grid.Column="3" 
-                Grid.Row="5"
-                Text="4"/>
-            <Button 
-                Grid.Column="4" 
-                Grid.Row="5"
-                Text="5"/>
             
+            <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="5">
+                    <Button
+                       Text="2x    100D"
+                       Clicked="Button_Clicked_2"
+                       WidthRequest="70"/>
+                    <Button
+                        Text="3x    500D"
+                        Clicked="Button_Clicked_3"
+                        WidthRequest="70"/>
+                    <Button
+                        Text="3"
+                        WidthRequest="70"/>
+                    <Button
+                        Text="4"
+                        WidthRequest="70"/>
+                    <Button
+                        Text="5"
+                        WidthRequest="70"/>
+            </StackLayout>
+           
         </Grid>
       </Frame>
     </ContentPage.Content>
