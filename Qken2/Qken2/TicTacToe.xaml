@@ -38,60 +38,58 @@
                 <Button
                  Grid.Row="2"
                  Grid.Column="1"
-                 Clicked="Button_Clicked"
-                 x:Name="zero"/>
-                <Button
-                 Grid.Row="3"
-                 Grid.Column="1"
                  Clicked="Button_Clicked_1"
-                 x:Name="one"/>
-                <Button
-                 Grid.Row="4"
-                 Grid.Column="1"
-                 Clicked="Button_Clicked_2"
-                 x:Name="two"/>
+                 x:Name="button1"/>
                 <Button
                  Grid.Row="2"
                  Grid.Column="2"
+                 Clicked="Button_Clicked_2"
+                 x:Name="button2"/>
+                <Button
+                 Grid.Row="2"
+                 Grid.Column="3"
                  Clicked="Button_Clicked_3"
-                 x:Name="three"/>
+                 x:Name="button3"/>
                 <Button
                  Grid.Row="3"
-                 Grid.Column="2"
+                 Grid.Column="1"
                  Clicked="Button_Clicked_4"
-                 x:Name="four"/>
+                 x:Name="button4"/>
                 <Button
-                 Grid.Row="4"
+                 Grid.Row="3"
                  Grid.Column="2"
                  Clicked="Button_Clicked_5"
-                 x:Name="five"/>
-                <Button
-                 Grid.Row="2"
-                 Grid.Column="3"
-                 Clicked="Button_Clicked_6"
-                 x:Name="six"/>
+                 x:Name="button5"/>
                 <Button
                  Grid.Row="3"
                  Grid.Column="3"
+                 Clicked="Button_Clicked_6"
+                 x:Name="button6"/>
+                <Button
+                 Grid.Row="4"
+                 Grid.Column="1"
                  Clicked="Button_Clicked_7"
-                 x:Name="seven"/>
+                 x:Name="button7"/>
+                <Button
+                 Grid.Row="4"
+                 Grid.Column="2"
+                 Clicked="Button_Clicked_8"
+                 x:Name="button8"/>
                 <Button
                  Grid.Row="4"
                  Grid.Column="3"
-                 Clicked="Button_Clicked_8"
-                 x:Name="eight"/>
+                 Clicked="Button_Clicked_9"
+                 x:Name="button9"/>
                 
                 <StackLayout Grid.Column="0" Grid.Row="6" Orientation="Horizontal" Grid.ColumnSpan="5">
                     <Button
                      Text="Singleplayer"
                      HorizontalOptions="EndAndExpand"
-                     WidthRequest="130"
-                     Clicked="Button_ClickedSingle"/>
+                     WidthRequest="130"/>
                     <Button
                      Text="Multiplayer"
                      HorizontalOptions="StartAndExpand"
-                     WidthRequest="130"
-                     Clicked="Button_ClickedMulti"/>
+                     WidthRequest="130"/>
                 </StackLayout>
             </Grid>
         </Frame>

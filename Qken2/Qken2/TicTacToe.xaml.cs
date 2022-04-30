@@ -11,203 +11,249 @@ namespace Qken2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TicTacToe : ContentPage
     {
-        bool multiplayer = false;
-        int xoro = 1;
-        bool bzero = false;
-        bool bone = false;
-        bool btwo = false;
-        bool bthree = false;
-        bool bfour = false;
-        bool bfive = false;
-        bool bsix = false;
-        bool bseven = false;
-        bool beight = false;
 
-        
-        
         public TicTacToe()
         {
             InitializeComponent();
         }
 
-        public void ImageDisplay()
-        {
-            xoro += 1;
+        String[] gameBoard = new string[9];
+        int currentTurn = 0;
 
-            if (xoro % 2 == 0)
+        public String returnSymbol(int turn)
+        {
+            if (turn % 2 == 0)
             {
-                if (bzero == true)
-                {
-                    zero.ImageSource = "X.jpg";
-                    bzero = false;
-                }
-                else if (bone == true)
-                {
-                    one.ImageSource = "X.jpg";
-                    bone = false;
-                }
-                else if (btwo == true)
-                {
-                    two.ImageSource = "X.jpg";
-                    btwo = false;
-                }
-                else if (bthree == true)
-                {
-                    three.ImageSource = "X.jpg";
-                    bthree = false;
-                }
-                else if (bfour == true)
-                {
-                    four.ImageSource = "X.jpg";
-                    bfour = false;
-                }
-                else if (bfive == true)
-                {
-                    five.ImageSource = "X.jpg";
-                    bfive = false;
-                }
-                else if (bsix == true)
-                {
-                    six.ImageSource = "X.jpg";
-                    bsix = false;
-                }
-                else if (bseven == true)
-                {
-                    seven.ImageSource = "X.jpg";
-                    bseven = false;
-                }
-                else if (beight == true)
-                {
-                    eight.ImageSource = "X.jpg";
-                    beight = false;
-                }
+                return "O";
             }
             else
             {
-                if (bzero == true)
+                return "X";
+            }
+        }
+
+        public void checkForWinner()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                String combination = "";
+
+                switch (i)
                 {
-                    zero.ImageSource = "O.jpg";
-                    bzero = false;
+                    case 0:
+                        combination = gameBoard[0] + gameBoard[4] + gameBoard[8];
+                        break;
+                    case 1:
+                        combination = gameBoard[2] + gameBoard[4] + gameBoard[6];
+                        break;
+                    case 2:
+                        combination = gameBoard[0] + gameBoard[1] + gameBoard[2];
+                        break;
+                    case 3:
+                        combination = gameBoard[3] + gameBoard[4] + gameBoard[5];
+                        break;
+                    case 4:
+                        combination = gameBoard[6] + gameBoard[7] + gameBoard[8];
+                        break;
+                    case 5:
+                        combination = gameBoard[0] + gameBoard[3] + gameBoard[6];
+                        break;
+                    case 6:
+                        combination = gameBoard[1] + gameBoard[4] + gameBoard[7];
+                        break;
+                    case 7:
+                        combination = gameBoard[2] + gameBoard[5] + gameBoard[8];
+                        break;
                 }
-                else if (bone == true)
+                                
+                if (combination.Equals("OOO"))
                 {
-                    one.ImageSource = "O.jpg";
-                    bone = false;
+                    reset();
+                    DisplayAlert("Congratulations!", "O has won the game", "OK");
                 }
-                else if (btwo == true)
+                else if (combination.Equals("XXX"))
                 {
-                    two.ImageSource = "O.jpg";
-                    btwo = false;
+                    reset();
+                    DisplayAlert("Congratulations!", "X has won the game", "OK");
                 }
-                else if (bthree == true)
+                else
                 {
-                    three.ImageSource = "O.jpg";
-                    bthree = false;
-                }
-                else if (bfour == true)
-                {
-                    four.ImageSource = "O.jpg";
-                    bfour = false;
-                }
-                else if (bfive == true)
-                {
-                    five.ImageSource = "O.jpg";
-                    bfive = false;
-                }
-                else if (bsix == true)
-                {
-                    six.ImageSource = "O.jpg";
-                    bsix = false;
-                }
-                else if (bseven == true)
-                {
-                    seven.ImageSource = "O.jpg";
-                    bseven = false;
-                }
-                else if (beight == true)
-                {
-                    eight.ImageSource = "O.jpg";
-                    beight = false;
+                    checkDraw();
                 }
             }
         }
+
+        public void reset()
+        {
+            button1.ImageSource = "";
+            button2.ImageSource = "";
+            button3.ImageSource = "";
+            button4.ImageSource = "";
+            button5.ImageSource = "";
+            button6.ImageSource = "";
+            button7.ImageSource = "";
+            button8.ImageSource = "";
+            button9.ImageSource = "";
+            gameBoard = new string[9];
+            currentTurn = 0;
+        }
+
+        public void checkDraw()
+        {
+            int counter = 0;
+            for (int i = 0; i < gameBoard.Length; i++)
+            {
+                if (gameBoard[i] != null)
+                {
+                    counter++;
+                }
+                if (counter == 9)
+                {
+                    reset();
+                    DisplayAlert("Whaaat!", "It's a Draw!", "OK");
+                }
+            }
+        }
+
 
         private void Button_ClickedBack(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new MainPage());
         }
 
-        private void Button_ClickedMulti(object sender, EventArgs e)
-        {
-            multiplayer = false;
-        }
-
-        private void Button_ClickedSingle(object sender, EventArgs e)
-        {
-            multiplayer = true;
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            
-            bzero = true;
-            ImageDisplay();
-        }
-
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            
-            bone = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[0] = returnSymbol(currentTurn);
+            if (gameBoard[0] == "X")
+            {
+                button1.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button1.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            
-            btwo = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[1] = returnSymbol(currentTurn);
+            if (gameBoard[1] == "X")
+            {
+                button2.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button2.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_3(object sender, EventArgs e)
         {
-            
-            bthree = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[2] = returnSymbol(currentTurn);
+            if (gameBoard[2] == "X")
+            {
+                button3.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button3.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_4(object sender, EventArgs e)
         {
-            
-            bfour = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[3] = returnSymbol(currentTurn);
+            if (gameBoard[3] == "X")
+            {
+                button4.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button4.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_5(object sender, EventArgs e)
         {
-            
-            bfive = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[4] = returnSymbol(currentTurn);
+            if (gameBoard[4] == "X")
+            {
+                button5.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button5.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_6(object sender, EventArgs e)
         {
-            
-            bsix = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[5] = returnSymbol(currentTurn);
+            if (gameBoard[5] == "X")
+            {
+                button6.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button6.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_7(object sender, EventArgs e)
         {
-            
-            bseven = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[6] = returnSymbol(currentTurn);
+            if (gameBoard[6] == "X")
+            {
+                button7.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button7.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
 
         private void Button_Clicked_8(object sender, EventArgs e)
         {
-            
-            beight = true;
-            ImageDisplay();
+            currentTurn++;
+            gameBoard[7] = returnSymbol(currentTurn);
+            if (gameBoard[7] == "X")
+            {
+                button8.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button8.ImageSource = "O.jpg";
+            }
+            checkForWinner();
+        }
+
+        private void Button_Clicked_9(object sender, EventArgs e)
+        {
+            currentTurn++;
+            gameBoard[8] = returnSymbol(currentTurn);
+            if (gameBoard[8] == "X")
+            {
+                button9.ImageSource = "X.jpg";
+            }
+            else
+            {
+                button9.ImageSource = "O.jpg";
+            }
+            checkForWinner();
         }
     }
 }
