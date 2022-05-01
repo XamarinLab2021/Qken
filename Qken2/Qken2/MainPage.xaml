@@ -4,8 +4,8 @@
              x:Class="Qken2.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <Frame Padding="10" BackgroundColor="Black">
-        <Grid BackgroundColor="Black">
+    <Frame Padding="10">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="100"/>
@@ -37,8 +37,7 @@
              HorizontalTextAlignment="Center"
              VerticalTextAlignment="Center"
              Grid.ColumnSpan="3"
-             FontSize="20"
-             BackgroundColor="DimGray"/>
+             FontSize="20"/>
             <Button
                 Grid.Row="2" 
                 Grid.Column="0"
@@ -72,17 +71,18 @@
                 Grid.ColumnSpan="3"
                 Text="Uprava designu coming soon!"
                 TextColor="Black"
-                BackgroundColor="DimGray"
                 FontSize="Title"/>
             <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="3">
                  <Label
                      Text="Tu bude daco co ma napadne"
                      TextColor="White"
-                     BackgroundColor="Indigo"/>
+                     BackgroundColor="Indigo"
+                     HorizontalOptions="CenterAndExpand"/>
                  <Label
                      Text="Tu bude daco co ma napadne"
                      TextColor="White"
-                     BackgroundColor="Indigo"/>
+                     BackgroundColor="Indigo"
+                     HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
 
         </Grid>

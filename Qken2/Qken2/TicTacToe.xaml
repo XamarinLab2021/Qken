@@ -29,6 +29,12 @@
                      Clicked="Button_ClickedBack"
                      HorizontalOptions="Start"
                      WidthRequest="80"/>
+                    <Label
+                        Text="Tic Tac Toe"
+                        TextColor="Black"
+                        FontSize="Title"
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="EndAndExpand"/>
                     <Button
                      ImageSource="scoin"
                      HorizontalOptions="EndAndExpand"

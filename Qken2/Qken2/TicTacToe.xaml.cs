@@ -76,10 +76,8 @@ namespace Qken2
                     reset();
                     DisplayAlert("Congratulations!", "X has won the game", "OK");
                 }
-                else
-                {
-                    checkDraw();
-                }
+                else { checkDraw(); }
+               
             }
         }
 
