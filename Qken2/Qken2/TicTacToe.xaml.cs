@@ -19,6 +19,15 @@ namespace Qken2
 
         String[] gameBoard = new string[9];
         int currentTurn = 0;
+        bool allreadyclicked1 = false;
+        bool allreadyclicked2 = false;
+        bool allreadyclicked3 = false;
+        bool allreadyclicked4 = false;
+        bool allreadyclicked5 = false;
+        bool allreadyclicked6 = false;
+        bool allreadyclicked7 = false;
+        bool allreadyclicked8 = false;
+        bool allreadyclicked9 = false;
 
         public String returnSymbol(int turn)
         {
@@ -94,6 +103,15 @@ namespace Qken2
             button9.ImageSource = "";
             gameBoard = new string[9];
             currentTurn = 0;
+            allreadyclicked1 = false;
+            allreadyclicked2 = false;
+            allreadyclicked3 = false;
+            allreadyclicked4 = false;
+            allreadyclicked5 = false;
+            allreadyclicked6 = false;
+            allreadyclicked7 = false;
+            allreadyclicked8 = false;
+            allreadyclicked9 = false;
         }
 
         public void checkDraw()
@@ -121,137 +139,173 @@ namespace Qken2
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[0] = returnSymbol(currentTurn);
-            if (gameBoard[0] == "X")
+            if (allreadyclicked1 == false)
             {
-                button1.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[0] = returnSymbol(currentTurn);
+               if (gameBoard[0] == "X")
+               {
+                   button1.ImageSource = "X.jpg";
+               }
+               else
+               {
+                   button1.ImageSource = "O.jpg";
+               }
+               allreadyclicked1 = true;
+               checkForWinner();
             }
-            else
-            {
-                button1.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[1] = returnSymbol(currentTurn);
-            if (gameBoard[1] == "X")
+            if (allreadyclicked2 == false)
             {
-                button2.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[1] = returnSymbol(currentTurn);
+                if (gameBoard[1] == "X")
+                {
+                    button2.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button2.ImageSource = "O.jpg";
+                }
+                allreadyclicked2 = true;
+                checkForWinner();
             }
-            else
-            {
-                button2.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_3(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[2] = returnSymbol(currentTurn);
-            if (gameBoard[2] == "X")
+            if (allreadyclicked3 == false)
             {
-                button3.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[2] = returnSymbol(currentTurn);
+                if (gameBoard[2] == "X")
+                {
+                    button3.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button3.ImageSource = "O.jpg";
+                }
+                allreadyclicked3 = true;
+                checkForWinner();
             }
-            else
-            {
-                button3.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_4(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[3] = returnSymbol(currentTurn);
-            if (gameBoard[3] == "X")
+            if (allreadyclicked4 == false)
             {
-                button4.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[3] = returnSymbol(currentTurn);
+                if (gameBoard[3] == "X")
+                {
+                    button4.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button4.ImageSource = "O.jpg";
+                }
+                allreadyclicked4 = true;
+                checkForWinner();
             }
-            else
-            {
-                button4.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_5(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[4] = returnSymbol(currentTurn);
-            if (gameBoard[4] == "X")
+            if (allreadyclicked5 == false)
             {
-                button5.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[4] = returnSymbol(currentTurn);
+                if (gameBoard[4] == "X")
+                {
+                    button5.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button5.ImageSource = "O.jpg";
+                }
+                allreadyclicked5 = true;
+                checkForWinner();
             }
-            else
-            {
-                button5.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_6(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[5] = returnSymbol(currentTurn);
-            if (gameBoard[5] == "X")
+            if (allreadyclicked6 == false)
             {
-                button6.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[5] = returnSymbol(currentTurn);
+                if (gameBoard[5] == "X")
+                {
+                    button6.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button6.ImageSource = "O.jpg";
+                }
+                allreadyclicked6 = true;
+                checkForWinner();
             }
-            else
-            {
-                button6.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_7(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[6] = returnSymbol(currentTurn);
-            if (gameBoard[6] == "X")
+            if (allreadyclicked7 == false)
             {
-                button7.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[6] = returnSymbol(currentTurn);
+                if (gameBoard[6] == "X")
+                {
+                    button7.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button7.ImageSource = "O.jpg";
+                }
+                allreadyclicked7 = true;
+                checkForWinner();
             }
-            else
-            {
-                button7.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_8(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[7] = returnSymbol(currentTurn);
-            if (gameBoard[7] == "X")
+            if (allreadyclicked8 == false)
             {
-                button8.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[7] = returnSymbol(currentTurn);
+                if (gameBoard[7] == "X")
+                {
+                    button8.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button8.ImageSource = "O.jpg";
+                }
+                allreadyclicked8 = true;
+                checkForWinner();
             }
-            else
-            {
-                button8.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
 
         private void Button_Clicked_9(object sender, EventArgs e)
         {
-            currentTurn++;
-            gameBoard[8] = returnSymbol(currentTurn);
-            if (gameBoard[8] == "X")
+            if (allreadyclicked9 == false)
             {
-                button9.ImageSource = "X.jpg";
+                currentTurn++;
+                gameBoard[8] = returnSymbol(currentTurn);
+                if (gameBoard[8] == "X")
+                {
+                    button9.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button9.ImageSource = "O.jpg";
+                }
+                allreadyclicked9 = true;
+                checkForWinner();
             }
-            else
-            {
-                button9.ImageSource = "O.jpg";
-            }
-            checkForWinner();
         }
     }
 }
