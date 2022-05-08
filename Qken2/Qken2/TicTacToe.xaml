@@ -25,20 +25,20 @@
                 
                 <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
                     <Button
-                     Text="Back"
+                     ImageSource="arrow"
                      Clicked="Button_ClickedBack"
                      HorizontalOptions="Start"
-                     WidthRequest="80"/>
+                     WidthRequest="80"
+                     BackgroundColor="White"/>
                     <Label
                         Text="Tic Tac Toe"
                         TextColor="Black"
                         FontSize="Title"
                         VerticalTextAlignment="Center"
                         HorizontalOptions="EndAndExpand"/>
-                    <Button
-                     ImageSource="scoin"
-                     HorizontalOptions="EndAndExpand"
-                     WidthRequest="80"/>
+                    <Image
+                     Source="scoin"
+                     HorizontalOptions="EndAndExpand"/>
                 </StackLayout>
                 
                 <Button

@@ -30,8 +30,9 @@
             <Button
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="Back"
-                Clicked="Button_Clickedback"/>
+                ImageSource="arrow"
+                Clicked="Button_Clickedback"
+                BackgroundColor="White"/>
             <Label
                 Grid.Row="0"
                 Grid.Column="2"
@@ -46,7 +47,8 @@
             <Button
                 Grid.Row="0"
                 Grid.Column="6"
-                ImageSource="eve"/>
+                ImageSource="eve"
+                BackgroundColor="White"/>
             <Label
                 Grid.Row="1"
                 Grid.Column="0"
