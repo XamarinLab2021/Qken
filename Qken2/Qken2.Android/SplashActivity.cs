@@ -19,8 +19,6 @@ namespace Qken2.Droid
         {
             base.OnCreate(savedInstanceState);
             StartActivity(typeof(MainActivity));
-            Finish();
-            OverridePendingTransition(0, 0);
         }
     }
 }
