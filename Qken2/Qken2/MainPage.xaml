@@ -4,7 +4,7 @@
              x:Class="Qken2.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <Frame Padding="10">
+    
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
@@ -84,8 +84,16 @@
                      BackgroundColor="Indigo"
                      HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
+            
+            <Grid x:Name="SplashGrid" BackgroundColor="{StaticResource Primary}" Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="3">
+                <Image 
+                    x:Name="Logo"
+                    HorizontalOptions="Center"
+                    Source="logo"
+                    VerticalOptions="Center"/>
+            </Grid>
 
         </Grid>
-    </Frame>
+    
 
 </ContentPage>

@@ -5,6 +5,7 @@
 		<item name="android:windowBackground">@drawable/splash</item>
 		<item name="android:windowNoTitle">true</item>
 		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowAnimationStyle">@null</item>
 	</style>
   <style name="MainTheme" parent="MainTheme.Base">
     <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
