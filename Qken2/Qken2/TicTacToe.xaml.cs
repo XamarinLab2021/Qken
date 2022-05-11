@@ -131,6 +131,21 @@ namespace Qken2
             }
         }
 
+        public void Displayer(int boardIndex, Button button)
+        {
+                currentTurn++;
+                gameBoard[boardIndex] = returnSymbol(currentTurn);
+                if (gameBoard[boardIndex] == "X")
+                {
+                    button.ImageSource = "X.jpg";
+                }
+                else
+                {
+                    button.ImageSource = "O.jpg";
+                }
+                checkForWinner();
+        }
+
 
         private void Button_ClickedBack(object sender, EventArgs e)
         {
@@ -141,18 +156,8 @@ namespace Qken2
         {
             if (allreadyclicked1 == false)
             {
-                currentTurn++;
-                gameBoard[0] = returnSymbol(currentTurn);
-               if (gameBoard[0] == "X")
-               {
-                   button1.ImageSource = "X.jpg";
-               }
-               else
-               {
-                   button1.ImageSource = "O.jpg";
-               }
-               allreadyclicked1 = true;
-               checkForWinner();
+                Displayer(0, button1);
+                allreadyclicked1 = true;
             }
         }
 
@@ -160,18 +165,8 @@ namespace Qken2
         {
             if (allreadyclicked2 == false)
             {
-                currentTurn++;
-                gameBoard[1] = returnSymbol(currentTurn);
-                if (gameBoard[1] == "X")
-                {
-                    button2.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button2.ImageSource = "O.jpg";
-                }
+                Displayer(1, button2);
                 allreadyclicked2 = true;
-                checkForWinner();
             }
         }
 
@@ -179,18 +174,8 @@ namespace Qken2
         {
             if (allreadyclicked3 == false)
             {
-                currentTurn++;
-                gameBoard[2] = returnSymbol(currentTurn);
-                if (gameBoard[2] == "X")
-                {
-                    button3.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button3.ImageSource = "O.jpg";
-                }
+                Displayer(2, button3);
                 allreadyclicked3 = true;
-                checkForWinner();
             }
         }
 
@@ -198,18 +183,8 @@ namespace Qken2
         {
             if (allreadyclicked4 == false)
             {
-                currentTurn++;
-                gameBoard[3] = returnSymbol(currentTurn);
-                if (gameBoard[3] == "X")
-                {
-                    button4.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button4.ImageSource = "O.jpg";
-                }
+                Displayer(3, button4);
                 allreadyclicked4 = true;
-                checkForWinner();
             }
         }
 
@@ -217,18 +192,8 @@ namespace Qken2
         {
             if (allreadyclicked5 == false)
             {
-                currentTurn++;
-                gameBoard[4] = returnSymbol(currentTurn);
-                if (gameBoard[4] == "X")
-                {
-                    button5.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button5.ImageSource = "O.jpg";
-                }
+                Displayer(4, button5);
                 allreadyclicked5 = true;
-                checkForWinner();
             }
         }
 
@@ -236,18 +201,8 @@ namespace Qken2
         {
             if (allreadyclicked6 == false)
             {
-                currentTurn++;
-                gameBoard[5] = returnSymbol(currentTurn);
-                if (gameBoard[5] == "X")
-                {
-                    button6.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button6.ImageSource = "O.jpg";
-                }
+                Displayer(5, button6);
                 allreadyclicked6 = true;
-                checkForWinner();
             }
         }
 
@@ -255,18 +210,8 @@ namespace Qken2
         {
             if (allreadyclicked7 == false)
             {
-                currentTurn++;
-                gameBoard[6] = returnSymbol(currentTurn);
-                if (gameBoard[6] == "X")
-                {
-                    button7.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button7.ImageSource = "O.jpg";
-                }
+                Displayer(6, button7);
                 allreadyclicked7 = true;
-                checkForWinner();
             }
         }
 
@@ -274,18 +219,8 @@ namespace Qken2
         {
             if (allreadyclicked8 == false)
             {
-                currentTurn++;
-                gameBoard[7] = returnSymbol(currentTurn);
-                if (gameBoard[7] == "X")
-                {
-                    button8.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button8.ImageSource = "O.jpg";
-                }
+                Displayer(7, button8);
                 allreadyclicked8 = true;
-                checkForWinner();
             }
         }
 
@@ -293,18 +228,8 @@ namespace Qken2
         {
             if (allreadyclicked9 == false)
             {
-                currentTurn++;
-                gameBoard[8] = returnSymbol(currentTurn);
-                if (gameBoard[8] == "X")
-                {
-                    button9.ImageSource = "X.jpg";
-                }
-                else
-                {
-                    button9.ImageSource = "O.jpg";
-                }
+                Displayer(8, button9);
                 allreadyclicked9 = true;
-                checkForWinner();
             }
         }
     }
