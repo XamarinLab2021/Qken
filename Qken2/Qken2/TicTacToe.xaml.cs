@@ -143,7 +143,6 @@ namespace Qken2
                 {
                     button.ImageSource = "O.jpg";
                 }
-                checkForWinner();
         }
 
 
@@ -158,6 +157,7 @@ namespace Qken2
             {
                 Displayer(0, button1);
                 allreadyclicked1 = true;
+                checkForWinner();
             }
         }
 
@@ -167,6 +167,7 @@ namespace Qken2
             {
                 Displayer(1, button2);
                 allreadyclicked2 = true;
+                checkForWinner();
             }
         }
 
@@ -176,6 +177,7 @@ namespace Qken2
             {
                 Displayer(2, button3);
                 allreadyclicked3 = true;
+                checkForWinner();
             }
         }
 
@@ -185,6 +187,7 @@ namespace Qken2
             {
                 Displayer(3, button4);
                 allreadyclicked4 = true;
+                checkForWinner();
             }
         }
 
@@ -194,6 +197,7 @@ namespace Qken2
             {
                 Displayer(4, button5);
                 allreadyclicked5 = true;
+                checkForWinner();
             }
         }
 
@@ -203,6 +207,7 @@ namespace Qken2
             {
                 Displayer(5, button6);
                 allreadyclicked6 = true;
+                checkForWinner();
             }
         }
 
@@ -212,6 +217,7 @@ namespace Qken2
             {
                 Displayer(6, button7);
                 allreadyclicked7 = true;
+                checkForWinner();
             }
         }
 
@@ -221,6 +227,7 @@ namespace Qken2
             {
                 Displayer(7, button8);
                 allreadyclicked8 = true;
+                checkForWinner();
             }
         }
 
@@ -230,6 +237,7 @@ namespace Qken2
             {
                 Displayer(8, button9);
                 allreadyclicked9 = true;
+                checkForWinner();
             }
         }
     }
