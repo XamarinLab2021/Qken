@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.Pexeso"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Frame Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                    <Button
+                        ImageSource="arrow"
+                        Clicked="Button_ClickedBack"
+                        HorizontalOptions="Start"
+                        WidthRequest="80"
+                        BackgroundColor="White"/>
+                    <Label
+                        Text="Pexeso"
+                        TextColor="Black"
+                        FontSize="Title"
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="EndAndExpand"/>
+                    <Image
+                        Source="scoin"
+                        HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_1"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_2"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_3"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_4"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_5"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Clicked="Button_Clicked_6"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Clicked="Button_Clicked_7"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Clicked="Button_Clicked_8"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="1"
+                        Clicked="Button_Clicked_9"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="1"
+                        Clicked="Button_Clicked_10"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Clicked="Button_Clicked_11"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Clicked="Button_Clicked_12"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        Clicked="Button_Clicked_13"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="2"
+                        Clicked="Button_Clicked_14"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="2"
+                        Clicked="Button_Clicked_15"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Clicked="Button_Clicked_16"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Clicked="Button_Clicked_17"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="3"
+                        Clicked="Button_Clicked_18"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="3"
+                        Clicked="Button_Clicked_19"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="3"
+                        Clicked="Button_Clicked_20"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_21"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_22"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_23"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_24"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_25"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_26"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_27"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_28"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_29"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_30"/>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="6"
+                        Clicked="Button_Clicked_31"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="6"
+                        Clicked="Button_Clicked_32"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="6"
+                        Clicked="Button_Clicked_33"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="6"
+                        Clicked="Button_Clicked_34"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="6"
+                        Clicked="Button_Clicked_35"/>
+                    <Button
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3"
+                        Grid.Row="7"
+                        Text="Reset"
+                        TextColor="Indigo"/>
+                </Grid>
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

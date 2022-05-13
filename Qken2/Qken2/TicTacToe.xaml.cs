@@ -143,6 +143,7 @@ namespace Qken2
                 {
                     button.ImageSource = "O.jpg";
                 }
+                checkForWinner();
         }
 
 
@@ -155,9 +156,8 @@ namespace Qken2
         {
             if (allreadyclicked1 == false)
             {
-                Displayer(0, button1);
                 allreadyclicked1 = true;
-                checkForWinner();
+                Displayer(0, button1);
             }
         }
 
@@ -165,9 +165,8 @@ namespace Qken2
         {
             if (allreadyclicked2 == false)
             {
-                Displayer(1, button2);
                 allreadyclicked2 = true;
-                checkForWinner();
+                Displayer(1, button2);
             }
         }
 
@@ -175,9 +174,8 @@ namespace Qken2
         {
             if (allreadyclicked3 == false)
             {
-                Displayer(2, button3);
                 allreadyclicked3 = true;
-                checkForWinner();
+                Displayer(2, button3);
             }
         }
 
@@ -185,9 +183,8 @@ namespace Qken2
         {
             if (allreadyclicked4 == false)
             {
-                Displayer(3, button4);
                 allreadyclicked4 = true;
-                checkForWinner();
+                Displayer(3, button4);
             }
         }
 
@@ -195,9 +192,8 @@ namespace Qken2
         {
             if (allreadyclicked5 == false)
             {
-                Displayer(4, button5);
                 allreadyclicked5 = true;
-                checkForWinner();
+                Displayer(4, button5);
             }
         }
 
@@ -205,9 +201,8 @@ namespace Qken2
         {
             if (allreadyclicked6 == false)
             {
-                Displayer(5, button6);
                 allreadyclicked6 = true;
-                checkForWinner();
+                Displayer(5, button6);
             }
         }
 
@@ -215,9 +210,8 @@ namespace Qken2
         {
             if (allreadyclicked7 == false)
             {
-                Displayer(6, button7);
                 allreadyclicked7 = true;
-                checkForWinner();
+                Displayer(6, button7);
             }
         }
 
@@ -225,9 +219,8 @@ namespace Qken2
         {
             if (allreadyclicked8 == false)
             {
-                Displayer(7, button8);
                 allreadyclicked8 = true;
-                checkForWinner();
+                Displayer(7, button8);
             }
         }
 
@@ -235,9 +228,8 @@ namespace Qken2
         {
             if (allreadyclicked9 == false)
             {
-                Displayer(8, button9);
                 allreadyclicked9 = true;
-                checkForWinner();
+                Displayer(8, button9);
             }
         }
     }

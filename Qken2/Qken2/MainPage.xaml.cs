@@ -30,5 +30,10 @@ namespace Qken2
         {
             Application.Current.MainPage = new NavigationPage(new TicTacToe());
         }
+
+        private void Button_OnClicked_4(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new Pexeso());
+        }
     }
 }

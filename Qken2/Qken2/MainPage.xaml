@@ -56,7 +56,8 @@
             <Button
                 Grid.Row="3" 
                 Grid.Column="0"
-                Text="Hra4"/>
+                Text="Pexeso"
+                Clicked="Button_OnClicked_4"/>
             <Button
                 Grid.Row="3" 
                 Grid.Column="1"
