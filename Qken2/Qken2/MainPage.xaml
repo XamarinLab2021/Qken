@@ -4,89 +4,137 @@
              x:Class="Qken2.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    
-        <Grid>
+
+    <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="120"/>
-                <RowDefinition Height="120"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="2"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="110"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label
-             Grid.Row="0"
-             Grid.Column="0" 
-             Text="Qken" 
-             TextColor="White"
-             HorizontalTextAlignment="Center"
-             VerticalTextAlignment="Center"
-             Grid.ColumnSpan="3"
-             FontSize="20"
-             BackgroundColor="Indigo"/>
+                Grid.Row="0"
+                Grid.Column="0" 
+                Text="Qken" 
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.ColumnSpan="5"
+                FontSize="20"
+                BackgroundColor="Indigo"/>
             <Label 
-             Grid.Row="1" 
-             Grid.Column="0" 
-             Text="Výber Hier:" 
-             TextColor="Black"
-             HorizontalTextAlignment="Center"
-             VerticalTextAlignment="Center"
-             Grid.ColumnSpan="3"
-             FontSize="20"/>
-            <Button
-                Grid.Row="2" 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Text="Games:" 
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.ColumnSpan="5"
+                FontSize="20"/>
+            <Label
                 Grid.Column="0"
-                Text="Dudo Clicker"
-                Clicked="Button_Clicked_1"/>
-            <Button
-                Grid.Row="2" 
-                Grid.Column="1"
-                Text="Rock Paper Scissors"
-                Clicked="Button_Clicked_2"/>
-            <Button
-                Grid.Row="2" 
-                Grid.Column="2"
-                Text="Tic Tac Toe"
-                Clicked="Button_Clicked_3"/>
-            <Button
-                Grid.Row="3" 
-                Grid.Column="0"
-                Text="Pexeso"
-                Clicked="Button_OnClicked_4"/>
+                Grid.ColumnSpan="5"
+                Grid.Row="2"
+                BackgroundColor="Black"/>
             <Button
                 Grid.Row="3" 
                 Grid.Column="1"
-                Text="Hra5"/>
-            <Button
-                Grid.Row="3" 
+                Clicked="Button_Clicked_1"
+                ImageSource="Clicker"/>
+            <Label
+                Grid.Row="3"
                 Grid.Column="2"
-                Text="Hra6"/>
+                Grid.ColumnSpan="2"
+                Text="Simple Clicking Game"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                FontSize="Title"/>
             <Label
                 Grid.Row="4"
                 Grid.Column="0"
-                Grid.ColumnSpan="3"
-                Text="Uprava designu coming soon!"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Black"/>
+            <Button
+                Grid.Row="5"
+                Grid.Column="3"
+                Clicked="Button_Clicked_2"
+                ImageSource="RPS"/>
+            <Label
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Text="Rock  Paper  Scissors"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
                 TextColor="Black"
                 FontSize="Title"/>
-            <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="3">
-                 <Label
-                     Text="Tu bude daco co ma napadne"
-                     TextColor="White"
-                     BackgroundColor="Indigo"
-                     HorizontalOptions="CenterAndExpand"/>
-                 <Label
-                     Text="Tu bude daco co ma napadne"
-                     TextColor="White"
-                     BackgroundColor="Indigo"
-                     HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Black"/>
+            <Button
+                Grid.Row="7"
+                Grid.Column="1"
+                Clicked="Button_Clicked_3"
+                ImageSource="TicTacToe"/>
+            <Label
+                Grid.Row="7"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Text="Tic - Tac - Toe"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                FontSize="Title"/>
+            <Label
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Black"/>
+            <Button
+                Grid.Row="9"
+                Grid.Column="3"
+                Clicked="Button_Clicked_4"
+                ImageSource="Pexeso"/>
+            <Label
+                Grid.Row="9"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Text="Project Under Construction"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                FontSize="Title"/>
+            <Label
+                Grid.Row="10"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Black"/>
 
-        </Grid>
+            <Label
+                Grid.Row="12"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Indigo"/>
+    </Grid>
     
 
 </ContentPage>

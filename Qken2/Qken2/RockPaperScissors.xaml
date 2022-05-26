@@ -41,7 +41,7 @@
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 x:Name="Winlose"
-                FontSize="Title"
+                FontSize="40"
                 TextColor="Indigo"
                 Text="Win/Lose"/>
             <Button

@@ -35,7 +35,7 @@ namespace Qken2
 
             if (opponentmove == 1)
             {
-                Winlose.Text = "You Draw";
+                Winlose.Text = "Draw";
                 Problemchoice.Source = "TheRock.jpg";
                 Compare.Source = "equals.png";
                 rowWins = 0;
@@ -43,7 +43,7 @@ namespace Qken2
             }
             else if (opponentmove == 2)
             {
-                Winlose.Text = "You Lose";
+                Winlose.Text = "Lose";
                 Problemchoice.Source = "paper.jpg";
                 Compare.Source = "right.png";
                 rowWins = 0;
@@ -52,7 +52,7 @@ namespace Qken2
             }
             else
             {
-                Winlose.Text = "You Win";
+                Winlose.Text = "Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
                 Problemchoice.Source = "scissors.jpg";
@@ -71,7 +71,7 @@ namespace Qken2
 
             if (opponentmove == 1)
             {
-                Winlose.Text = "You Win";
+                Winlose.Text = "Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
                 Problemchoice.Source = "TheRock.jpg";
@@ -81,7 +81,7 @@ namespace Qken2
             }
             else if (opponentmove == 2)
             {
-                Winlose.Text = "You Draw";
+                Winlose.Text = "Draw";
                 Problemchoice.Source = "paper.jpg";
                 Compare.Source = "equals.png";
                 rowWins = 0;
@@ -89,7 +89,7 @@ namespace Qken2
             }
             else
             {
-                Winlose.Text = "You Lose";
+                Winlose.Text = "Lose";
                 Problemchoice.Source = "scissors.jpg";
                 Compare.Source = "right.png";
                 rowWins = 0;
@@ -107,7 +107,7 @@ namespace Qken2
 
             if (opponentmove == 1)
             {
-                Winlose.Text = "You Lose";
+                Winlose.Text = "Lose";
                 Problemchoice.Source = "TheRock.jpg";
                 Compare.Source = "right.png";
                 rowWins = 0;
@@ -116,7 +116,7 @@ namespace Qken2
             }
             else if (opponentmove == 2)
             {
-                Winlose.Text = "You Win";
+                Winlose.Text = "Win";
                 wins += 1;
                 Wins.Text = wins.ToString();
                 Problemchoice.Source = "paper.jpg";
@@ -126,7 +126,7 @@ namespace Qken2
             }
             else
             {
-                Winlose.Text = "You Draw";
+                Winlose.Text = "Draw";
                 Problemchoice.Source = "scissors.jpg";
                 Compare.Source = "equals.png";
                 rowWins = 0;

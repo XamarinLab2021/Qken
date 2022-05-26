@@ -55,7 +55,6 @@
             <Button
                 Grid.Row="3" 
                 Grid.Column="1"
-                Text="Dudo"
                 Grid.ColumnSpan="3"
                 ImageSource="dudo"
                 BackgroundColor="White"

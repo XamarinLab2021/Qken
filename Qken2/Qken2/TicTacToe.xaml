@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Frame Padding="10" BackgroundColor="White">
-            <Grid Grid.ColumnSpacing ="0">
+            <Grid Grid.ColumnSpacing ="0"   BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="80"/>
                     <RowDefinition Height="100"/>
