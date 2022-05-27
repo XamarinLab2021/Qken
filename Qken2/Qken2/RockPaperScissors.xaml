@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Qken2.RockPaperScissors"
-             NavigationPage.HasNavigationBar="False">
+             x:Class="Qken2.RockPaperScissors">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Rock Paper Scissors" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+            <Image Source="slogo.png"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <Frame Padding="10" BackgroundColor="White">
         <Grid Grid.ColumnSpacing ="0">
@@ -16,39 +21,27 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="25"/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="80"/>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="80"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="80"/>
 
 
-            </Grid.ColumnDefinitions>
-            <Button
-                Grid.Row="0"
-                Grid.Column="0"
-                ImageSource="arrow"
-                Clicked="Button_Clickedback"
-                BackgroundColor="White"/>
+                </Grid.ColumnDefinitions>
             <Label
                 Grid.Row="0"
-                Grid.Column="2"
-                Grid.ColumnSpan="3"
-                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="7"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
+                VerticalTextAlignment="End"
                 x:Name="Winlose"
                 FontSize="40"
                 TextColor="Indigo"
                 Text="Win/Lose"/>
-            <Button
-                Grid.Row="0"
-                Grid.Column="6"
-                ImageSource="eve"
-                BackgroundColor="White"/>
             <Label
                 Grid.Row="1"
                 Grid.Column="0"

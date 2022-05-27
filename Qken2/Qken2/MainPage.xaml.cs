@@ -16,24 +16,24 @@ namespace Qken2
         }
 
         
-        private void Button_Clicked_1(object sender, EventArgs e)
+        async void Button_Clicked_1(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new DudoClicker());
+            await Navigation.PushAsync(new DudoClicker());
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        async void Button_Clicked_2(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new RockPaperScissors());
+            await Navigation.PushAsync(new RockPaperScissors());
         }
 
-        private void Button_Clicked_3(object sender, EventArgs e)
+        async void Button_Clicked_3(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new TicTacToe());
+            await Navigation.PushAsync(new TicTacToe());
         }
 
-        private void Button_Clicked_4(object sender, EventArgs e)
+        async void Button_Clicked_4(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new Pexeso());
+            await Navigation.PushAsync(new Pexeso());
         }
     }
 }

@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Qken2.TicTacToe"
-             NavigationPage.HasNavigationBar="False">
+             x:Class="Qken2.TicTacToe">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Tic Tac Toe" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+            <Image Source="slogo.png" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <Frame Padding="10" BackgroundColor="White">
             <Grid Grid.ColumnSpacing ="0"   BackgroundColor="White">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
@@ -22,25 +27,7 @@
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
-                <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
-                    <Button
-                     ImageSource="arrow"
-                     Clicked="Button_ClickedBack"
-                     HorizontalOptions="Start"
-                     WidthRequest="80"
-                     BackgroundColor="White"/>
-                    <Label
-                        Text="Tic Tac Toe"
-                        TextColor="Black"
-                        FontSize="Title"
-                        VerticalTextAlignment="Center"
-                        HorizontalOptions="EndAndExpand"/>
-                    <Image
-                     Source="scoin"
-                     HorizontalOptions="EndAndExpand"/>
-                </StackLayout>
-                
+
                 <Button
                  Grid.Row="2"
                  Grid.Column="1"

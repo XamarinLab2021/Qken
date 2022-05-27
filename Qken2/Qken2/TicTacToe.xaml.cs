@@ -15,6 +15,8 @@ namespace Qken2
         public TicTacToe()
         {
             InitializeComponent();
+            var navigationPage = Application.Current.MainPage as NavigationPage;
+            navigationPage.BarBackgroundColor = Color.Indigo;
         }
 
         String[] gameBoard = new string[9];
@@ -144,12 +146,6 @@ namespace Qken2
                     button.ImageSource = "O.jpg";
                 }
                 checkForWinner();
-        }
-
-
-        private void Button_ClickedBack(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new NavigationPage(new MainPage());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

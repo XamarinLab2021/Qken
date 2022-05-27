@@ -6,17 +6,17 @@
 
     <Grid BackgroundColor="White">
             <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="2"/>
+                <RowDefinition Height="1"/>
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="2"/>
+                <RowDefinition Height="1"/>
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="2"/>
+                <RowDefinition Height="1"/>
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="2"/>
+                <RowDefinition Height="1"/>
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="2"/>
+                <RowDefinition Height="1"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
@@ -35,7 +35,7 @@
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 Grid.ColumnSpan="5"
-                FontSize="20"
+                FontSize="23"
                 BackgroundColor="Indigo"/>
             <Label 
                 Grid.Row="1" 
@@ -45,7 +45,7 @@
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 Grid.ColumnSpan="5"
-                FontSize="20"/>
+                FontSize="23"/>
             <Label
                 Grid.Column="0"
                 Grid.ColumnSpan="5"

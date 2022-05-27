@@ -15,11 +15,8 @@ namespace Qken2
         public Pexeso()
         {
             InitializeComponent();
-        }
-
-        private void Button_ClickedBack(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new NavigationPage(new MainPage()); 
+            var navigationPage = Application.Current.MainPage as NavigationPage;
+            navigationPage.BarBackgroundColor = Color.Indigo;
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
