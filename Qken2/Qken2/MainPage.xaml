@@ -4,8 +4,7 @@
              x:Class="Qken2.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-
-    <Grid>
+    <Grid BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
@@ -57,15 +56,16 @@
                 Grid.Column="1"
                 Clicked="Button_Clicked_1"
                 ImageSource="Clicker"/>
-            <Label
+            <Button
                 Grid.Row="3"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_1"
                 Text="Simple Clicking Game"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 TextColor="Black"
-                FontSize="Title"/>
+                FontSize="Title"
+                TextTransform="None"/>
             <Label
                 Grid.Row="4"
                 Grid.Column="0"
@@ -76,15 +76,16 @@
                 Grid.Column="3"
                 Clicked="Button_Clicked_2"
                 ImageSource="RPS"/>
-            <Label
+            <Button
                 Grid.Row="5"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
-                Text="Rock  Paper  Scissors"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_2"
+                Text="Rock  Paper Scissors"
                 TextColor="Black"
-                FontSize="Title"/>
+                FontSize="Title"
+                TextTransform="None"/>
             <Label
                 Grid.Row="6"
                 Grid.Column="0"
@@ -95,15 +96,16 @@
                 Grid.Column="1"
                 Clicked="Button_Clicked_3"
                 ImageSource="TicTacToe"/>
-            <Label
+            <Button
                 Grid.Row="7"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_3"
                 Text="Tic - Tac - Toe"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 TextColor="Black"
-                FontSize="Title"/>
+                FontSize="Title"
+                TextTransform="None"/>
             <Label
                 Grid.Row="8"
                 Grid.Column="0"
@@ -114,15 +116,16 @@
                 Grid.Column="3"
                 Clicked="Button_Clicked_4"
                 ImageSource="Pexeso"/>
-            <Label
+            <Button
                 Grid.Row="9"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_4"
                 Text="Project Under Construction"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 TextColor="Black"
-                FontSize="Title"/>
+                FontSize="Title"
+                TextTransform="None"/>
             <Label
                 Grid.Row="10"
                 Grid.Column="0"

@@ -5,32 +5,32 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
       <Frame Padding="10">
-        <Grid BackgroundColor="white">
-            <Grid.RowDefinitions>
-               <RowDefinition Height="80"/>
-               <RowDefinition Height="120"/>
-               <RowDefinition Height="60"/>
-               <RowDefinition Height="250"/>
-               <RowDefinition Height="*"/>
-               <RowDefinition Height="70"/>
-               <RowDefinition Height="40"/>
-               </Grid.RowDefinitions>
-           <Grid.ColumnDefinitions>
-               <ColumnDefinition Width="*"/>
-               <ColumnDefinition Width="100"/>
-               <ColumnDefinition Width="100"/>
-               <ColumnDefinition Width="100"/>
-               <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            
-            <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
-              <Button
+          <Grid BackgroundColor="white">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="5">
+                        <Button
                 ImageSource="arrow"
                 Clicked="Button_ClickedBack"
                 HorizontalOptions="Start"
                 WidthRequest="80"
                 BackgroundColor="White"/>
-              <Label
+                        <Label
                 Grid.Row="0" 
                 Grid.Column="1"
                 Text="Dud Coins:"
@@ -38,12 +38,12 @@
                 HorizontalOptions ="EndAndExpand"
                 FontSize="Large"
                 TextColor="Black"/>
-              <Image
+                        <Image
                 Source="Dud_CoinS"
                 HorizontalOptions="EndAndExpand"/>
-            </StackLayout>
-            
-            <Label 
+                    </StackLayout>
+
+                    <Label 
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 Grid.Row="1" 
@@ -52,14 +52,14 @@
                 FontSize="Header"
                 Text="0"
                 x:Name="Dudpoints"/>
-            <Button
+                    <Button
                 Grid.Row="3" 
                 Grid.Column="1"
                 Grid.ColumnSpan="3"
                 ImageSource="dudo"
                 BackgroundColor="White"
                 Clicked="Button_Clicked_1"/>
-            <Label
+                    <Label
                 Grid.Row="4" 
                 Grid.Column="1"
                 Grid.ColumnSpan="3"
@@ -68,28 +68,28 @@
                 VerticalTextAlignment="End"
                 TextColor="Black"
                 FontSize="Large"/>
-            
-            <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="5">
-                    <Button
+
+                    <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="5">
+                        <Button
                        Text="2x    100D"
                        Clicked="Button_Clicked_2"
                        WidthRequest="70"/>
-                    <Button
+                        <Button
                         Text="3x    500D"
                         Clicked="Button_Clicked_3"
                         WidthRequest="70"/>
-                    <Button
+                        <Button
                         Text="3"
                         WidthRequest="70"/>
-                    <Button
+                        <Button
                         Text="4"
                         WidthRequest="70"/>
-                    <Button
+                        <Button
                         Text="5"
                         WidthRequest="70"/>
-            </StackLayout>
-           
-        </Grid>
+                    </StackLayout>
+          </Grid>
+          
       </Frame>
     </ContentPage.Content>
 </ContentPage>
