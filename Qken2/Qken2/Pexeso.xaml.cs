@@ -158,40 +158,5 @@ namespace Qken2
         {
             throw new NotImplementedException();
         }
-
-        private void Button_Clicked_29(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_30(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_31(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_32(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_33(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_34(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void Button_Clicked_35(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

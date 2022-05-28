@@ -12,7 +12,7 @@
         <Frame Padding="10" BackgroundColor="White">
             <Grid Grid.ColumnSpacing ="0"   BackgroundColor="White">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
@@ -73,17 +73,6 @@
                  Grid.Column="3"
                  Clicked="Button_Clicked_9"
                  x:Name="button9"/>
-                
-                <StackLayout Grid.Column="0" Grid.Row="6" Orientation="Horizontal" Grid.ColumnSpan="5">
-                    <Button
-                     Text="Singleplayer"
-                     HorizontalOptions="EndAndExpand"
-                     WidthRequest="130"/>
-                    <Button
-                     Text="Multiplayer"
-                     HorizontalOptions="StartAndExpand"
-                     WidthRequest="130"/>
-                </StackLayout>
             </Grid>
         </Frame>
     </ContentPage.Content>
