@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="DudoClicker.xaml">
+    <EmbeddedResource Update="CookieClicker.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pexeso.xaml">

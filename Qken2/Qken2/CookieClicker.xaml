@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.CookieClicker">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Cookie Clicker" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+            <Image Source="slogo.png" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Frame Padding="10">
+            <Grid BackgroundColor="white">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="Cookies:"
+                    FontSize="30"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="0"
+                    FontSize="45"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    x:Name="Points"/>
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    ImageSource="Cookie"
+                    x:Name="Cookie"
+                    Clicked="Button_Clicked"/>
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="Upgrades:"
+                    FontSize="30"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+
+                <Grid Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Text="2x  100"
+                        x:Name="bigboost"
+                        Clicked="Button_Clicked_1"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_2"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="0"
+                        Text="3x  500"
+                        x:Name="maxboost"
+                        Clicked="Button_Clicked_3"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_4"/>
+                </Grid>
+
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="Skins:"
+                    FontSize="30"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+                
+                <Grid Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_5"
+                        Text="1000"/>
+                    <Button
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_6"
+                        Text="1000"/>
+                    <Button
+                        Grid.Column="3"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_7"
+                        Text="1000"/>
+                    <Button
+                        Grid.Column="4"
+                        Grid.Row="0"
+                        Clicked="Button_Clicked_8"
+                        Text="1000"/>
+                </Grid>
+            </Grid>
+
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
