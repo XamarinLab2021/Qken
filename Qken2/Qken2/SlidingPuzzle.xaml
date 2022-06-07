@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.SlidingPuzzle">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Sliding Puzzle" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+            <Image Source="slogo.png"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                x:Name="button1"
+                Clicked="button1_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                x:Name="button2"
+                Clicked="button2_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="4"
+                x:Name="button3"
+                Clicked="button3_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="5"
+                x:Name="button4"
+                Clicked="button4_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                x:Name="button5"
+                Clicked="button5_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                x:Name="button6"
+                Clicked="button6_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="3"
+                Grid.Column="4"
+                x:Name="button7"
+                Clicked="button7_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="3"
+                Grid.Column="5"
+                x:Name="button8"
+                Clicked="button8_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                x:Name="button9"
+                Clicked="button9_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="3"
+                x:Name="button10"
+                Clicked="button10_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="4"
+                x:Name="button11"
+                Clicked="button11_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="4"
+                Grid.Column="5"
+                x:Name="button12"
+                Clicked="button12_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="5"
+                Grid.Column="2"
+                x:Name="button13"
+                Clicked="button13_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="5"
+                Grid.Column="3"
+                x:Name="button14"
+                Clicked="button14_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="5"
+                Grid.Column="4"
+                x:Name="button15"
+                Clicked="button15_Clicked"
+                FontSize="25"/>
+            <Button
+                Grid.Row="5"
+                Grid.Column="5"
+                x:Name="button16"
+                Clicked="button16_Clicked"
+                FontSize="25"/>
+            <Label
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="6"
+                BackgroundColor="Indigo"/>
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="6"
+                BackgroundColor="Indigo"/>
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.RowSpan="6"
+                BackgroundColor="Indigo"/>
+            <Label
+                Grid.Row="1"
+                Grid.Column="6"
+                Grid.RowSpan="6"
+                BackgroundColor="Indigo"/>
+            <Button
+                Grid.Row="8"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Clicked="Reset"
+                x:Name="reset"
+                Text="Press To Start"
+                FontSize="20"
+                TextColor="Indigo"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

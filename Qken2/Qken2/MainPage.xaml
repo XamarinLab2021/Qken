@@ -115,14 +115,14 @@
                 Grid.Row="9"
                 Grid.Column="3"
                 Clicked="Button_Clicked_4"
-                ImageSource="Pexeso"/>
+                ImageSource="SlidingPuzzle"/>
             <Button
                 Grid.Row="9"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
                 BackgroundColor="White"
                 Clicked="Button_Clicked_4"
-                Text="Project Under Construction"
+                Text="Sliding Puzzle"
                 TextColor="Black"
                 FontSize="Title"
                 TextTransform="None"/>

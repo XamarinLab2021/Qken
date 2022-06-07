@@ -33,7 +33,7 @@ namespace Qken2
 
         async void Button_Clicked_4(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Pexeso());
+            await Navigation.PushAsync(new SlidingPuzzle());
         }
     }
 }
