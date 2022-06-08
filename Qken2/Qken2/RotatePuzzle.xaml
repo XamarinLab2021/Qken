@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.RotatePuzzle">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Rotate Puzzle" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="22"/>
+            <Image Source="slogo.png"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid ColumnSpacing ="0"   BackgroundColor="White"  RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton
+                Grid.Row="1"
+                Grid.Column="1"
+                x:Name="Rotate1"
+                Clicked="Button_Clicked1"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="1"
+                Grid.Column="2"
+                x:Name="Rotate2"
+                Clicked="Button_Clicked2"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="1"
+                Grid.Column="3"
+                x:Name="Rotate3"
+                Clicked="Button_Clicked3"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="1"
+                Grid.Column="4"
+                x:Name="Rotate4"
+                Clicked="Button_Clicked4"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="2"
+                Grid.Column="1"
+                x:Name="Rotate5"
+                Clicked="Button_Clicked5"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="2"
+                Grid.Column="2"
+                x:Name="Rotate6"
+                Clicked="Button_Clicked6"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="2"
+                Grid.Column="3"
+                x:Name="Rotate7"
+                Clicked="Button_Clicked7"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="2"
+                Grid.Column="4"
+                x:Name="Rotate8"
+                Clicked="Button_Clicked8"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="3"
+                Grid.Column="1"
+                x:Name="Rotate9"
+                Clicked="Button_Clicked9"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="3"
+                Grid.Column="2"
+                x:Name="Rotate10"
+                Clicked="Button_Clicked10"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="3"
+                Grid.Column="3"
+                x:Name="Rotate11"
+                Clicked="Button_Clicked11"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="3"
+                Grid.Column="4"
+                x:Name="Rotate12"
+                Clicked="Button_Clicked12"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="4"
+                Grid.Column="1"
+                x:Name="Rotate13"
+                Clicked="Button_Clicked13"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="4"
+                Grid.Column="2"
+                x:Name="Rotate14"
+                Clicked="Button_Clicked14"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="4"
+                Grid.Column="3"
+                x:Name="Rotate15"
+                Clicked="Button_Clicked15"
+                Source="right"/>
+            <ImageButton
+                Grid.Row="4"
+                Grid.Column="4"
+                x:Name="Rotate16"
+                Clicked="Button_Clicked16"
+                Source="right"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

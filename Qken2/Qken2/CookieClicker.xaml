@@ -78,7 +78,7 @@
                     <Button
                         Grid.Column="1"
                         Grid.Row="0"
-                        Text="2x  100"
+                        Text="2x    50"
                         x:Name="bigboost"
                         Clicked="Button_Clicked_1"
                         CornerRadius="10"/>
@@ -86,12 +86,12 @@
                         Grid.Column="2"
                         Grid.Row="0"
                         Clicked="Button_Clicked_2"
+                        Text="3x  100"
+                        x:Name="maxboost"
                         CornerRadius="10"/>
                     <Button
                         Grid.Column="3"
                         Grid.Row="0"
-                        Text="3x  500"
-                        x:Name="maxboost"
                         Clicked="Button_Clicked_3"
                         CornerRadius="10"/>
                     <Button
@@ -127,28 +127,28 @@
                         Grid.Column="1"
                         Grid.Row="0"
                         Clicked="Button_Clicked_5"
-                        Text="1000"
+                        Text="10"
                         x:Name="Button1"
                         CornerRadius="10"/>
                     <Button
                         Grid.Column="2"
                         Grid.Row="0"
                         Clicked="Button_Clicked_6"
-                        Text="1000"
+                        Text="10"
                         x:Name="Button2"
                         CornerRadius="10"/>
                     <Button
                         Grid.Column="3"
                         Grid.Row="0"
                         Clicked="Button_Clicked_7"
-                        Text="1000"
+                        Text="10"
                         x:Name="Button3"
                         CornerRadius="10"/>
                     <Button
                         Grid.Column="4"
                         Grid.Row="0"
                         Clicked="Button_Clicked_8"
-                        Text="1000"
+                        Text="10"
                         x:Name="Button4"
                         CornerRadius="10"/>
                 </Grid>

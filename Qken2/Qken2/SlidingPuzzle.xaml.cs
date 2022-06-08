@@ -17,6 +17,7 @@ namespace Qken2
             InitializeComponent();
             var navigationPage = Application.Current.MainPage as NavigationPage;
             navigationPage.BarBackgroundColor = Color.Indigo;
+            Shuffle();
         }
         
         public void EmptySpot(Button butt1, Button butt2)
@@ -89,7 +90,6 @@ namespace Qken2
 
         private void Reset(object sender, EventArgs e)
         {
-            reset.Text = "Reset";
             Shuffle();
         }
 

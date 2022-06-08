@@ -153,8 +153,7 @@
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
                 Clicked="Reset"
-                x:Name="reset"
-                Text="Press To Start"
+                Text="Reset"
                 FontSize="20"
                 TextColor="Indigo"/>
         </Grid>
