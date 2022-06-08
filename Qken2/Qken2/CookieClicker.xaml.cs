@@ -9,6 +9,18 @@ using Xamarin.Forms.Xaml;
 
 namespace Qken2
 {
+    public class Skin
+    {
+        public ImageSource Cookie;
+        public bool WasAlreadyClicked;
+
+        public Skin(string imageSource)
+        {
+            Cookie = imageSource;
+            WasAlreadyClicked = false;
+        }
+    }
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CookieClicker : ContentPage
     {
@@ -17,29 +29,36 @@ namespace Qken2
         int multiplaier = 1;
         bool allreadyClicked_1 = false;
         bool allreadyClicked_2 = false;
-        bool cookieclicked1 = false;
-        bool cookieclicked2 = false;
-        bool cookieclicked3 = false;
-        bool cookieclicked4 = false;
+        private Skin skin1;
+        private Skin skin2;
+        private Skin skin3;
+        private Skin skin4;
 
         public CookieClicker()
         {
             InitializeComponent();
             var navigationPage = Application.Current.MainPage as NavigationPage;
             navigationPage.BarBackgroundColor = Color.Indigo;
-        }
 
-        public void ImageSetter(ImageSource cookie, bool aclicked)
+            skin1 = new Skin("cookie1");
+            skin2 = new Skin("cookie2");
+            skin3 = new Skin("cookie3");
+            skin4 = new Skin("cookie4");
+        }
+        
+        public void SetSkinImageToCookieBtn(Skin skin, Button clickedButton)
         {
-            if (aclicked == true)
+            if (skin.WasAlreadyClicked)
             {
-                Cookie.ImageSource = cookie;
+                Cookie.ImageSource = skin.Cookie;
             }
-            else if (points >= 1000)
+            else if (points >= 10)
             {
-                Cookie.ImageSource = cookie;
-                points -= 1000;
-                aclicked = true;
+                Cookie.ImageSource = skin.Cookie;
+                clickedButton.ImageSource = skin.Cookie;
+                clickedButton.Text = "";
+                points -= 10;
+                skin.WasAlreadyClicked = true;
             }
             else
             {
@@ -98,22 +117,22 @@ namespace Qken2
 
         private void Button_Clicked_5(object sender, EventArgs e)
         {
-            ImageSetter("cookie1", cookieclicked1);
+            SetSkinImageToCookieBtn(skin1, Button1);
         }
 
         private void Button_Clicked_6(object sender, EventArgs e)
         {
-            ImageSetter("cookie2", cookieclicked2);
+            SetSkinImageToCookieBtn(skin2, Button2);
         }
 
         private void Button_Clicked_7(object sender, EventArgs e)
         {
-            ImageSetter("cookie3", cookieclicked3);
+            SetSkinImageToCookieBtn(skin3, Button3);
         }
 
         private void Button_Clicked_8(object sender, EventArgs e)
         {
-            ImageSetter("cookie4", cookieclicked4);
+            SetSkinImageToCookieBtn(skin4, Button4);
         }
     }
 }

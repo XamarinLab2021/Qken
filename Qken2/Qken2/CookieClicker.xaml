@@ -13,7 +13,7 @@
             <Grid BackgroundColor="white">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
-                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="60"/>
                     <RowDefinition Height="250"/>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="70"/>
@@ -80,21 +80,25 @@
                         Grid.Row="0"
                         Text="2x  100"
                         x:Name="bigboost"
-                        Clicked="Button_Clicked_1"/>
+                        Clicked="Button_Clicked_1"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="2"
                         Grid.Row="0"
-                        Clicked="Button_Clicked_2"/>
+                        Clicked="Button_Clicked_2"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="3"
                         Grid.Row="0"
                         Text="3x  500"
                         x:Name="maxboost"
-                        Clicked="Button_Clicked_3"/>
+                        Clicked="Button_Clicked_3"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="4"
                         Grid.Row="0"
-                        Clicked="Button_Clicked_4"/>
+                        Clicked="Button_Clicked_4"
+                        CornerRadius="10"/>
                 </Grid>
 
                 <Label
@@ -123,22 +127,30 @@
                         Grid.Column="1"
                         Grid.Row="0"
                         Clicked="Button_Clicked_5"
-                        Text="1000"/>
+                        Text="1000"
+                        x:Name="Button1"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="2"
                         Grid.Row="0"
                         Clicked="Button_Clicked_6"
-                        Text="1000"/>
+                        Text="1000"
+                        x:Name="Button2"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="3"
                         Grid.Row="0"
                         Clicked="Button_Clicked_7"
-                        Text="1000"/>
+                        Text="1000"
+                        x:Name="Button3"
+                        CornerRadius="10"/>
                     <Button
                         Grid.Column="4"
                         Grid.Row="0"
                         Clicked="Button_Clicked_8"
-                        Text="1000"/>
+                        Text="1000"
+                        x:Name="Button4"
+                        CornerRadius="10"/>
                 </Grid>
             </Grid>
 
