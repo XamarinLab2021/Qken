@@ -20,8 +20,6 @@ namespace Qken2
         public RockPaperScissors()
         {
             InitializeComponent();
-            var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Indigo;
         }
        
        private void Button_Clickedback(object sender, EventArgs e)

@@ -11,11 +11,13 @@
     <ContentPage.Content>
         <Grid ColumnSpacing ="0"   BackgroundColor="White"  RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="70"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -31,97 +33,107 @@
                 Grid.Column="1"
                 x:Name="Rotate1"
                 Clicked="Button_Clicked1"
-                Source="right"/>
+                Source="image16"/>
             <ImageButton
                 Grid.Row="1"
                 Grid.Column="2"
                 x:Name="Rotate2"
                 Clicked="Button_Clicked2"
-                Source="right"/>
+                Source="image15"/>
             <ImageButton
                 Grid.Row="1"
                 Grid.Column="3"
                 x:Name="Rotate3"
                 Clicked="Button_Clicked3"
-                Source="right"/>
+                Source="image14"/>
             <ImageButton
                 Grid.Row="1"
                 Grid.Column="4"
                 x:Name="Rotate4"
                 Clicked="Button_Clicked4"
-                Source="right"/>
+                Source="image13"/>
             <ImageButton
                 Grid.Row="2"
                 Grid.Column="1"
                 x:Name="Rotate5"
                 Clicked="Button_Clicked5"
-                Source="right"/>
+                Source="image12"/>
             <ImageButton
                 Grid.Row="2"
                 Grid.Column="2"
                 x:Name="Rotate6"
                 Clicked="Button_Clicked6"
-                Source="right"/>
+                Source="image11"/>
             <ImageButton
                 Grid.Row="2"
                 Grid.Column="3"
                 x:Name="Rotate7"
                 Clicked="Button_Clicked7"
-                Source="right"/>
+                Source="image10"/>
             <ImageButton
                 Grid.Row="2"
                 Grid.Column="4"
                 x:Name="Rotate8"
                 Clicked="Button_Clicked8"
-                Source="right"/>
+                Source="image9"/>
             <ImageButton
                 Grid.Row="3"
                 Grid.Column="1"
                 x:Name="Rotate9"
                 Clicked="Button_Clicked9"
-                Source="right"/>
+                Source="image8"/>
             <ImageButton
                 Grid.Row="3"
                 Grid.Column="2"
                 x:Name="Rotate10"
                 Clicked="Button_Clicked10"
-                Source="right"/>
+                Source="image7"/>
             <ImageButton
                 Grid.Row="3"
                 Grid.Column="3"
                 x:Name="Rotate11"
                 Clicked="Button_Clicked11"
-                Source="right"/>
+                Source="image6"/>
             <ImageButton
                 Grid.Row="3"
                 Grid.Column="4"
                 x:Name="Rotate12"
                 Clicked="Button_Clicked12"
-                Source="right"/>
+                Source="image5"/>
             <ImageButton
                 Grid.Row="4"
                 Grid.Column="1"
                 x:Name="Rotate13"
                 Clicked="Button_Clicked13"
-                Source="right"/>
+                Source="image4"/>
             <ImageButton
                 Grid.Row="4"
                 Grid.Column="2"
                 x:Name="Rotate14"
                 Clicked="Button_Clicked14"
-                Source="right"/>
+                Source="image3"/>
             <ImageButton
                 Grid.Row="4"
                 Grid.Column="3"
                 x:Name="Rotate15"
                 Clicked="Button_Clicked15"
-                Source="right"/>
+                Source="image2"/>
             <ImageButton
                 Grid.Row="4"
                 Grid.Column="4"
                 x:Name="Rotate16"
                 Clicked="Button_Clicked16"
-                Source="right"/>
+                Source="image1"/>
+            <Button
+                Grid.Row="6"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Clicked="Reset"
+                Text="Reset"
+                FontSize="20"
+                TextColor="White"
+                BackgroundColor="Indigo"
+                CornerRadius="40"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

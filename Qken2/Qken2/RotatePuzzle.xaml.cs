@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,8 +26,6 @@ namespace Qken2
         public RotatePuzzle()
         {
             InitializeComponent();
-            var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Indigo;
 
             blocks = new List<Block>();
             blocks.Add(new Block(Rotate1));
@@ -48,8 +44,6 @@ namespace Qken2
             blocks.Add(new Block(Rotate14));
             blocks.Add(new Block(Rotate15));
             blocks.Add(new Block(Rotate16));
-
-            Shuffle();
         }
 
         private void Shuffle()
@@ -70,7 +64,6 @@ namespace Qken2
             }
 
             DisplayAlert("Congratulations!", "You have won Rotate Puzzle", "OK");
-            Shuffle();
         }
 
         private void Rotate90Degrees(Block block)
@@ -142,7 +135,7 @@ namespace Qken2
 
         private void Button_Clicked12(object sender, EventArgs e)
         {
-            HandleButtonClicked(11); 
+            HandleButtonClicked(11);
         }
 
         private void Button_Clicked13(object sender, EventArgs e)
@@ -163,6 +156,11 @@ namespace Qken2
         private void Button_Clicked16(object sender, EventArgs e)
         {
             HandleButtonClicked(15);
+        }
+
+        private void Reset(object sender, EventArgs e)
+        {
+            Shuffle();
         }
     }
 }

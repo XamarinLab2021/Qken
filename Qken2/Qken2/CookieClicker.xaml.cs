@@ -39,8 +39,6 @@ namespace Qken2
         public CookieClicker()
         {
             InitializeComponent();
-            var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Indigo;
 
             skin1 = new Skin("cookie1", "Scookie1", Button1);
             skin2 = new Skin("cookie2", "Scookie2", Button2);

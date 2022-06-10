@@ -15,8 +15,6 @@ namespace Qken2
         public TicTacToe()
         {
             InitializeComponent();
-            var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Indigo;
         }
 
         String[] gameBoard = new string[9];

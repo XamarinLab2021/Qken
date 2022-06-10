@@ -11,6 +11,8 @@ namespace Qken2
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+            var navigationPage = Application.Current.MainPage as NavigationPage;
+            navigationPage.BarBackgroundColor = Color.Indigo;
         }
 
         protected override void OnStart()

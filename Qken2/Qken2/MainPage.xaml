@@ -1,23 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Qken2.MainPage"
-             NavigationPage.HasNavigationBar="False">
-
+             x:Class="Qken2.MainPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Qken" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="25"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <Grid BackgroundColor="White">
             <Grid.RowDefinitions>
-                <RowDefinition Height="55"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="1"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="1"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="1"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="1"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="1"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -27,25 +32,6 @@
                 <ColumnDefinition Width="110"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label
-                Grid.Row="0"
-                Grid.Column="0" 
-                Text="Qken" 
-                TextColor="White"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
-                Grid.ColumnSpan="5"
-                FontSize="23"
-                BackgroundColor="Indigo"/>
-            <Label 
-                Grid.Row="1" 
-                Grid.Column="0" 
-                Text="Games:" 
-                TextColor="Black"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
-                Grid.ColumnSpan="5"
-                FontSize="23"/>
             <Label
                 Grid.Column="0"
                 Grid.ColumnSpan="5"
@@ -131,9 +117,28 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="5"
                 BackgroundColor="Black"/>
-
+            <Button
+                Grid.Row="11"
+                Grid.Column="1"
+                Clicked="Button_Clicked_5"
+                ImageSource=""/>
+            <Button
+                Grid.Row="11"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                Clicked="Button_Clicked_5"
+                Text="Rotate Puzzle"
+                TextColor="Black"
+                FontSize="Title"
+                TextTransform="None"/>
             <Label
                 Grid.Row="12"
+                Grid.Column="0"
+                Grid.ColumnSpan="5"
+                BackgroundColor="Black"/>
+            <Label
+                Grid.Row="14"
                 Grid.Column="0"
                 Grid.ColumnSpan="5"
                 BackgroundColor="Indigo"/>

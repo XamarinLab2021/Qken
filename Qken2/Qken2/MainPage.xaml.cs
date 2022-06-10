@@ -18,7 +18,7 @@ namespace Qken2
         
         async void Button_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RotatePuzzle());
+            await Navigation.PushAsync(new CookieClicker());
         }
 
         async void Button_Clicked_2(object sender, EventArgs e)
@@ -34,6 +34,11 @@ namespace Qken2
         async void Button_Clicked_4(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SlidingPuzzle());
+        }
+
+        async void Button_Clicked_5(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RotatePuzzle());
         }
     }
 }

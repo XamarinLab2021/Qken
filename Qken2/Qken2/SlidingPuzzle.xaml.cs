@@ -15,8 +15,6 @@ namespace Qken2
         public SlidingPuzzle()
         {
             InitializeComponent();
-            var navigationPage = Application.Current.MainPage as NavigationPage;
-            navigationPage.BarBackgroundColor = Color.Indigo;
             Shuffle();
         }
         
