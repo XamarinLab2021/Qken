@@ -13,50 +13,17 @@ namespace Qken2
         public ImageButton Button;
         public int Angle;
 
-        public Block(ImageButton imageButton, int angle)
+        public Block(ImageButton imageButton)
         {
             Button = imageButton;
-            Angle = angle;
+            Angle = 0;
         }
     }
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RotatePuzzle : ContentPage
     {
-
-        private Block block1;
-        private Block block2;
-        private Block block3;
-        private Block block4;
-        private Block block5;
-        private Block block6;
-        private Block block7;
-        private Block block8;
-        private Block block9;
-        private Block block10;
-        private Block block11;
-        private Block block12;
-        private Block block13;
-        private Block block14;
-        private Block block15;
-        private Block block16;
-
-        int currentAngle1 = 0;
-        int currentAngle2 = 0;
-        int currentAngle3 = 0;
-        int currentAngle4 = 0;
-        int currentAngle5 = 0;
-        int currentAngle6 = 0;
-        int currentAngle7 = 0;
-        int currentAngle8 = 0;
-        int currentAngle9 = 0;
-        int currentAngle10 = 0;
-        int currentAngle11 = 0;
-        int currentAngle12 = 0;
-        int currentAngle13 = 0;
-        int currentAngle14 = 0;
-        int currentAngle15 = 0;
-        int currentAngle16 = 0;
+        List<Block> blocks;
 
         public RotatePuzzle()
         {
@@ -64,147 +31,138 @@ namespace Qken2
             var navigationPage = Application.Current.MainPage as NavigationPage;
             navigationPage.BarBackgroundColor = Color.Indigo;
 
+            blocks = new List<Block>();
+            blocks.Add(new Block(Rotate1));
+            blocks.Add(new Block(Rotate2));
+            blocks.Add(new Block(Rotate3));
+            blocks.Add(new Block(Rotate4));
+            blocks.Add(new Block(Rotate5));
+            blocks.Add(new Block(Rotate6));
+            blocks.Add(new Block(Rotate7));
+            blocks.Add(new Block(Rotate8));
+            blocks.Add(new Block(Rotate9));
+            blocks.Add(new Block(Rotate10));
+            blocks.Add(new Block(Rotate11));
+            blocks.Add(new Block(Rotate12));
+            blocks.Add(new Block(Rotate13));
+            blocks.Add(new Block(Rotate14));
+            blocks.Add(new Block(Rotate15));
+            blocks.Add(new Block(Rotate16));
+
             Shuffle();
-
-            block1 = new Block(Rotate1, currentAngle1);
-            block2 = new Block(Rotate2, currentAngle2);
-            block3 = new Block(Rotate3, currentAngle3);
-            block4 = new Block(Rotate4, currentAngle4);
-            block5 = new Block(Rotate5, currentAngle5);
-            block6 = new Block(Rotate6, currentAngle6);
-            block7 = new Block(Rotate7, currentAngle7);
-            block8 = new Block(Rotate8, currentAngle8);
-            block9 = new Block(Rotate9, currentAngle9);
-            block10 = new Block(Rotate10, currentAngle10);
-            block11 = new Block(Rotate11, currentAngle11);
-            block12 = new Block(Rotate12, currentAngle12);
-            block13 = new Block(Rotate13, currentAngle13);
-            block14 = new Block(Rotate14, currentAngle14);
-            block15 = new Block(Rotate15, currentAngle15);
-            block16 = new Block(Rotate16, currentAngle16);
         }
 
-        public void Shuffle()
+        private void Shuffle()
         {
-            
-        }
-
-
-        public void WinChecker()
-        {
-            if (block1.Angle == 0 && block2.Angle == 0 && block3.Angle == 0 && block4.Angle == 0 && block5.Angle == 0 && block6.Angle == 0 &&
-                block7.Angle == 0 && block8.Angle == 0 && block9.Angle == 0 && block10.Angle == 0 && block11.Angle == 0 && block12.Angle == 0 &&
-                block13.Angle == 0 && block14.Angle == 0 && block15.Angle == 0 && block16.Angle == 0)
+            var random = new Random();
+            foreach (var block in blocks)
             {
-                DisplayAlert("Congratulations!", "You have won Rotate Puzzle", "OK");
-                Shuffle();
+                block.Angle = random.Next(0, 4) * 90;
+                block.Button.RotateTo(block.Angle);
             }
         }
 
-        public void Rotator(Block block)
+        private void WinChecker()
+        {
+            if (blocks.Any(block => block.Angle % 360 != 0))
+            {
+                return;
+            }
+
+            DisplayAlert("Congratulations!", "You have won Rotate Puzzle", "OK");
+            Shuffle();
+        }
+
+        private void Rotate90Degrees(Block block)
         {
             block.Angle += 90;
             block.Button.RotateTo(block.Angle);
-            if (block.Angle == 360)
-            {
-                block.Angle = 0;
-            }
+        }
+
+        private void HandleButtonClicked(int blockIndex)
+        {
+            Rotate90Degrees(blocks[blockIndex]);
+            WinChecker();
         }
 
         private void Button_Clicked1(object sender, EventArgs e)
         {
-            Rotator(block1);
-            WinChecker();
+            HandleButtonClicked(0);
         }
 
         private void Button_Clicked2(object sender, EventArgs e)
         {
-            Rotator(block2);
-            WinChecker();
+            HandleButtonClicked(1);
         }
 
         private void Button_Clicked3(object sender, EventArgs e)
         {
-            Rotator(block3);
-            WinChecker();
+            HandleButtonClicked(2);
         }
 
         private void Button_Clicked4(object sender, EventArgs e)
         {
-            Rotator(block4);
-            WinChecker();
+            HandleButtonClicked(3);
         }
 
         private void Button_Clicked5(object sender, EventArgs e)
         {
-            Rotator(block5);
-            WinChecker();
+            HandleButtonClicked(4);
         }
 
         private void Button_Clicked6(object sender, EventArgs e)
         {
-            Rotator(block6);
-            WinChecker();
+            HandleButtonClicked(5);
         }
 
         private void Button_Clicked7(object sender, EventArgs e)
         {
-            Rotator(block7);
-            WinChecker();
+            HandleButtonClicked(6);
         }
 
         private void Button_Clicked8(object sender, EventArgs e)
         {
-            Rotator(block8);
-            WinChecker();
+            HandleButtonClicked(7);
         }
 
         private void Button_Clicked9(object sender, EventArgs e)
         {
-            Rotator(block9);
-            WinChecker();
+            HandleButtonClicked(8);
         }
 
         private void Button_Clicked10(object sender, EventArgs e)
         {
-            Rotator(block10);
-            WinChecker();
+            HandleButtonClicked(9);
         }
 
         private void Button_Clicked11(object sender, EventArgs e)
         {
-            Rotator(block11);
-            WinChecker();
+            HandleButtonClicked(10);
         }
 
         private void Button_Clicked12(object sender, EventArgs e)
         {
-            Rotator(block12);
-            WinChecker();
+            HandleButtonClicked(11); 
         }
 
         private void Button_Clicked13(object sender, EventArgs e)
         {
-            Rotator(block13);
-            WinChecker();
+            HandleButtonClicked(12);
         }
 
         private void Button_Clicked14(object sender, EventArgs e)
         {
-            Rotator(block14);
-            WinChecker();
+            HandleButtonClicked(13);
         }
 
         private void Button_Clicked15(object sender, EventArgs e)
         {
-            Rotator(block15);
-            WinChecker();
+            HandleButtonClicked(14);
         }
 
         private void Button_Clicked16(object sender, EventArgs e)
         {
-            Rotator(block16);
-            WinChecker();
+            HandleButtonClicked(15);
         }
     }
 }
