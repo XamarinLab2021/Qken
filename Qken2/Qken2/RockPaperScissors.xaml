@@ -50,16 +50,16 @@
                 Text="You:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                FontSize="Large"/>
+                FontSize="21"/>
             <Label
                 Grid.Row="1"
                 Grid.Column="5"
                 Grid.ColumnSpan="2"
                 TextColor="Black"
-                Text="Problem:"
+                Text="Opponent:"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                FontSize="Large"/>
+                FontSize="21"/>
             <Image
                 Grid.Row="2"
                 Grid.Column="0"

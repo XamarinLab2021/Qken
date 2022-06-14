@@ -48,7 +48,7 @@ namespace Qken2
                 Compare.Source = "right.png";
                 rowWins = 0;
                 RowWins.Text = rowWins.ToString();
-                Problem.Source = "problem.png";
+                Problem.Source = "";
             }
             else
             {
@@ -94,7 +94,7 @@ namespace Qken2
                 Compare.Source = "right.png";
                 rowWins = 0;
                 RowWins.Text = rowWins.ToString();
-                Problem.Source = "problem.png";
+                Problem.Source = "";
             }
         }
 
@@ -112,7 +112,7 @@ namespace Qken2
                 Compare.Source = "right.png";
                 rowWins = 0;
                 RowWins.Text = rowWins.ToString();
-                Problem.Source = "problem.png";
+                Problem.Source = "";
             }
             else if (opponentmove == 2)
             {

@@ -226,5 +226,10 @@ namespace Qken2
                 Displayer(8, button9);
             }
         }
+
+        private void Reset(object sender, EventArgs e)
+        {
+            reset();
+        }
     }
 }
